@@ -1,0 +1,104 @@
+#body-contatos {
+    display: flex;
+    justify-content: center;
+    background-color: gray;
+}
+
+img {
+    margin-bottom: 5%;
+}
+
+.container-contacts {
+    display: flex;
+    justify-content: center;
+    background-color: gray;
+    width: max-content;
+    height: max-content;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    padding: 5%;
+    padding-top: 10%;
+    position: absolute;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    margin-top: -25px;
+    position: absolute;
+    width: auto;
+    height: 45px;
+    margin-right: 10%;
+}
+
+.contacts {
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.contato {
+    background-color: rgb(58, 58, 58);
+    height: max-content;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    line-height: 125%;
+    text-align: center;
+}
+
+.contato > h1{
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.contato > h2 {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.contato > p {
+    font-size: 15px;
+}
+
+#contact {
+    display: none;
+}
+
+@media only screen and (min-width:1024px) {
+    #body-contatos {
+        overflow: hidden;
+    }
+
+    .container-contacts {
+        display: flex;
+        align-items: center;
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        padding: 0%;
+        padding-top: 0%;
+    }
+
+    .contato {
+        padding: auto 10%;
+        margin: 10px 10px 0 0;
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        width: auto;
+        height: 40px;
+        transform: translateY(300%);
+        padding: 10px;
+        margin-right: 10%;
+        position: relative;
+    }
+
+    .contacts {
+        display: grid;
+        grid-template-columns: repeat(4, max-content);
+        max-height: 300px;
+    }
+}

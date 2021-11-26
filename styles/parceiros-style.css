@@ -1,0 +1,1248 @@
+html {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  background: #1f1f1f;
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  font-size: 2vh;
+  font-style: normal;
+  color: #ffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2.5vh;
+}
+
+
+.header-parceiros {
+  margin-top: -16px;
+  background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.7)), url(../imgs/img-parceiros/img/bg/parceirosbg.png);
+  background-position: center center;
+  width: 100vw;
+  height: fit-content;
+}
+
+.grid-container {
+  display: grid;
+  grid-row-gap: 20px;
+  z-index: -2;
+}
+
+.grid-parceiros {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 45%);
+  grid-template-rows: repeat(4, 150px);
+  grid-gap: 2vw;
+  margin-top: -50px;
+  z-index: 3;
+  justify-content: center;
+  margin-right: 0px;
+  animation: fadeIn linear 0.2s;
+}
+
+.button-plus {
+  margin: 2px;
+  margin-top: 1.2vh;
+  font-weight: bold;
+  color: #fff;
+  border: solid 2px #fff;
+  border-radius: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 4.5vh;
+  text-decoration: none;
+  width: 4.5vh;
+}
+
+.button-plus > p {
+  text-decoration: none;
+  font-size: 3vh;
+}
+
+#jbscard {
+  background-image: url("../imgs/img-parceiros/img/bg/jbsbg.png");
+}
+
+.titulos-estagios{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 4vh;
+  margin-bottom: 2vh;
+  margin-top: 1vh;
+  line-height: 120%;
+}
+
+.estagiotitulo{
+  padding-top: 50px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 10vh;
+}
+
+#pequenotextoestagio{
+  width: 80vw;
+  text-align: center;
+}
+
+#originalcard {
+  background-image: url("../imgs/img-parceiros/img/bg/originalbg.png");
+}
+
+#floracard {
+  background-image: url("../imgs/img-parceiros/img/bg/florabg.png");
+}
+
+#picpaycard {
+  background-image: url("../imgs/img-parceiros/img/bg/picpaybg.png");
+}
+
+#ruralcard {
+  background-image: url("../imgs/img-parceiros/img/bg/ruralbg.png");
+}
+
+#ambarcard {
+  background-image: url("../imgs/img-parceiros/img/bg/ambarbg.png");
+}
+
+#eldoradocard {
+  background-image: url("/imgs/img-parceiros/img/bg/eldoradobg.png");
+  grid-column: 2;
+}
+
+.fundo {
+  border: 1px solid transparent;
+  background-image: linear-gradient(rgba(12,12,12,0.8), rgba(12,12,12,0.8)), url("../imgs/img-parceiros/img/bg/parceirosbg.png");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  min-height: 260px;
+}
+
+.titulosimg {
+  line-height: 125%;
+  font-size: 4vh;
+}
+
+#jftituloprincipal {
+  font-size: 5vh;
+  text-transform: uppercase;
+  margin-bottom: 3vh;
+  margin-top: 20px;
+  align-self: center;
+  text-align: center;
+}
+
+.texto-alinhado {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+#jftextoprincipal {
+  width: 90vw;
+  text-align: center;
+  margin-top: -10px;
+}
+
+main > h1 {
+  margin-top: -1px;
+}
+
+.botaomais {
+  height: 20px;
+  display: flex;
+  justify-content: flex-end;
+  background: transparent;
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 2%;
+}
+
+.grid-item {
+  background-color: rgba(12, 12, 12, 0.6);
+  background-blend-mode: darken;
+  border-radius: 10px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  align-content: center;
+  transition: 0.5s;
+  transition-timing-function: ease-in-out;
+  z-index: 3;
+  border: 2px solid #fff;
+}
+
+.bgimgs {
+  position: relative;
+  margin-left: 10px;
+  margin-right: 7px;
+  z-index: 1;
+  margin-top: -40px;
+}
+
+.tituloap{
+  font-size: 4vh;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 3vh;
+}
+
+.galeria {
+  background-color: white;
+}
+
+#titulogaleria{
+  color: #1f1f1f;
+  font-size: 4vh;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 3vh;
+}
+
+#textoap {
+  margin: 10px;
+  font-weight: normal;
+  text-align: left;
+}
+
+.container {
+  color: #000000;
+  padding-top: 7vh;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 7vh;
+  width: 84vw;
+}
+
+#textoprincipal {
+  opacity: 100%;
+  background-size: cover;
+  width: 50vw;
+  font-size: 3vh;
+  max-height: 100%;
+}
+
+.title {
+  display: none;
+  background-image: url("../imgs/img-parceiros/img/bg/aulaspraticasbg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+  background-position: center;
+  width: 40%;
+  margin-left: 3vw;
+  background-color: rgba(12, 12, 12, 0.52);
+  max-width: 210px;
+  min-height: 170px;
+}
+
+.title > h1 {
+  width: 10px;
+  height: 10px;
+  font-weight: 500;
+  font-size: 2.5vh;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+.texto-conclusao {
+  margin-left: 3vh;
+  margin-top: 10px;
+  z-index: 7;
+  margin-right: 2vh;
+  font-weight: normal;
+}
+
+#estaginho {
+  margin-top: 35px;
+}
+
+.swiftlabel {
+  display: block;
+  position: relative;
+  margin-top: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
+  z-index: 2;
+  background-repeat: no-repeat;
+  background-image: url("../imgs/img-parceiros/img/bg/estagios/bgswift.png");
+  border-radius: 6px;
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(12, 12, 12, 0.8);
+  width: 295px;
+  height: fit-content;
+}
+
+
+.estitulos {
+  font-weight: bolder;
+  font-size: 2vh;
+}
+
+.textosestagios {
+  width: 90%;
+  padding-bottom: 3vh;
+  padding-top: 1vh;
+}
+
+.logotipos {
+  display: block;
+  width: auto;
+  height: 7vh;
+}
+
+#logotiposwift {
+  height: 40px;
+  margin-top: 20px;
+  padding-bottom: 7px;
+  margin-bottom: 7px;
+  border-radius: 2px;
+  width: fit-content;
+}
+
+.container-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+  height: auto;
+  border-bottom: 2px solid #fff;
+  margin-bottom: 10px;
+}
+
+#friboicontainer {
+  background-image: linear-gradient(rgba(12,12,12,0.8), rgba(12,12,12,0.8)), url("../imgs/img-parceiros/img/bg/estagios/bgfriboi.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+#liderescontainer {
+  background-image: linear-gradient(rgba(12,12,12,0.8), rgba(12,12,12,0.8)), url("../imgs/img-parceiros/img/bg/estagios/swiftvendbg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center;
+}
+
+#originalcontainer {
+  background-image: linear-gradient(rgba(12,12,12,0.8), rgba(12,12,12,0.8)), url("../imgs/img-parceiros/img/bg/estagios/bgoriginal.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center;
+}
+
+
+#picpaycontainer {
+  background-image: linear-gradient(rgba(12,12,12,0.8), rgba(12,12,12,0.8)), url("../imgs/img-parceiros/img/bg/estagios/bgpicpay.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center;
+}
+
+#jbscontainer {
+  background-image: linear-gradient(rgba(12,12,12,0.8), rgba(12,12,12,0.8)), url("../imgs/img-parceiros/img/bg/estagios/bgjbs.png");
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: initial;
+  margin-bottom: 10vh;
+}
+
+.estitulosfriboi {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8vh;
+  background: #1f1f1f;
+  position: relative;
+  z-index: 2;
+  margin-top: -20px;
+  padding: 6px;
+  width: fit-content;
+  border: none;
+  margin-left: 20px;
+  text-align: left;
+  font-weight: bolder;
+  margin-bottom: 4px;
+}
+
+.imgfribasbg {
+  height: 50px;
+}
+
+.loguinhos {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-left: -20px;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  padding-top: 3vh;
+}
+
+.friboicontent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-height: min-content;
+}
+
+#searaloguinho {
+  border-radius: 2px;
+}
+
+#swiftestagiop {
+  width: 265px;
+  margin-left: 15px;
+  padding-bottom: 2vh;
+}
+
+#gerenteswift {
+  height: 250px;
+}
+
+#logotiporigi {
+  height: 30px;
+  width: fit-content;
+  margin-top: 20px;
+  padding-bottom: 1vh;
+  margin-bottom: 1vh;
+  border-radius: 2px;
+}
+
+#logotippic {
+  height: 30px;
+  width: fit-content;
+  margin-top: 20px;
+  padding-bottom: 7px;
+  margin-bottom: 7px;
+  border-radius: 2px;
+}
+
+
+#textinho {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.swiftcontainer {
+  display: flex;
+  background-image: linear-gradient(rgba(12,12,12,0.8), rgba(12,12,12,0.8)), url("../imgs/img-parceiros/img/bg/estagios/bgswift.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  width: 90vw;
+  border: 2px solid #ffffff;
+  border-radius: 7px;
+  height: fit-content;
+  min-height: 40vh;
+  max-width: 1040px;
+}
+
+.container-bg{
+  margin-top: 12vh;
+  background: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.estagios-container {
+  margin-top: 8vh;
+  display: flex;
+  position: relative;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 15px;
+  background-color: #ffff;
+  border-radius: 3px;
+  text-transform: uppercase;
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+}
+
+.modal {
+  height: inherit;
+  padding-right: 0px;
+  margin-right: 0px;
+  width: inherit;
+  z-index: 20;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(30, 30, 31, 0.61);
+  transition: all 0.4s;
+}
+
+.modal:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal__content {
+  border: solid 2px #fff;
+  height: inherit;
+  line-height: 125%;
+  color: #000000;
+  border-radius: 4px;
+  position: relative;
+  width: 500px;
+  max-width: 60vw;
+  background: #fff;
+  padding: 2vh 3vh;
+  font-size: 2vh;
+}
+
+.modal__content > h1 {
+  font-weight: 800;
+  margin-bottom: 10px;
+  font-size: 3vh;
+}
+
+.modal__content > p {
+  font-size: 2.6vh;
+}
+
+.modal__footer {
+  text-align: right;
+}
+.modal__footer > a {
+  color: #585858;
+}
+
+.modal__footer > i {
+  color: #d02d2c;
+}
+
+.modal__close {
+  font-size: 7vh;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 2px;
+  right: 10px;
+  text-decoration: none;
+  text-shadow: 2px 2px 6px rgba(12, 12, 12, 0.52);
+}
+
+.bgmodal {
+  border: solid 2px #fff;
+  border-radius: 10px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  background-size: cover;
+  background-position: center;
+  height: 21vh;
+  margin-bottom: 1.75vh;
+  margin-right: -19px;
+  margin-left: -19px;
+  margin-top: -30px;
+}
+
+#bgmodaljbs {
+  background-image: linear-gradient(rgba(12,12,12,0.6), rgba(12,12,12,0.6)), url("../imgs/img-parceiros/img/bg/jbs-modal-bg.png");
+}
+
+#bgmodaloriginal {
+  background-image: linear-gradient(rgba(12, 12, 12, 0.7), rgba(12, 12, 12, 0.7)), url("../imgs/img-parceiros/img/bg/original-modal-bg.jpg");
+  background-position: initial;
+}
+
+#bgmodalflora {
+  background-image: linear-gradient(rgba(12, 12, 12, 0.7), rgba(12, 12, 12, 0.7)), url("../imgs/img-parceiros/img/bg/flora-modal-bg.png");
+  background-position: initial;
+}
+
+#bgmodalpicpay {
+  background-image: linear-gradient(rgba(12, 12, 12, 0.7), rgba(12, 12, 12, 0.7)), url("../imgs/img-parceiros/img/bg/picpay-modal-bg.png");
+  background-position: center;
+}
+
+#bgmodalrural {
+  background-image: linear-gradient(rgba(12, 12, 12, 0.7), rgba(12, 12, 12, 0.7)), url("../imgs/img-parceiros/img/bg/rural-modal-bg.png");
+  background-position: center;
+}
+
+#bgmodaleldorado {
+  background-image: linear-gradient(rgba(12, 12, 12, 0.7), rgba(12, 12, 12, 0.7)), url("../imgs/img-parceiros/img/bg/eldorado-modal-bg.png");
+  background-position: center;
+}
+
+#bgmodalambar {
+  background-image: linear-gradient(rgba(12, 12, 12, 0.7), rgba(12, 12, 12, 0.7)), url("../imgs/img-parceiros/img/bg/ambar-modal-bg.png");
+  background-position: center;
+}
+
+
+
+#floralogotipo, #rurallogotipo {
+height: 12vh;
+}
+
+
+
+
+/*MEDIA QUERY*/
+
+@media only screen and (min-width: 420px) {
+  .grid-parceiros {
+    grid-template-columns: repeat(3, 29vw);
+    grid-template-rows: repeat(3, 25vh);
+  }
+
+  .botaomais {
+    margin-left: 16vw;
+  }
+
+  #jbslogotipo {
+    height: 6vh;
+  }
+
+  #originallogotipo {
+    height: 5.8vh;
+  }
+
+  #pplogotipo {
+    height: 6vh;
+  }
+
+  #floralogotipo {
+    height: 12vh;
+  }
+
+  #rurallogotipo {
+    height: 12vh;
+  }
+
+  #ambarlogotipo {
+    height: 7.5vh;
+  }
+
+  #eldoradologotipo {
+    height: 6vh;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+    .container-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    height: 110px;
+    border-right: 2px solid #fff;
+    border-bottom: 0;
+  }
+
+  .button-plus{
+    width: 5vh;
+    height: 5vh;
+  }
+
+  .button-plus {
+    font-size: 4vh;
+  }
+
+  .textosestagios > p {
+    font-size: 15px;
+  }
+
+    .title{
+      display: flex;
+    }
+
+  #tituloap,
+  .titulos-estagios{
+    font-size: 25px;
+    text-align: left;
+  }
+
+  #textoap > p {
+    font-size: 15px;
+  }
+
+  .friboicontent {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .loguinhos {
+    height: fit-content;
+    margin: 1vh;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2.4vh;
+    border: none;
+    width: fit-content;
+  }
+  .textosestagios {
+    width: 50%;
+    padding-top: 4vh;
+  }
+
+  #friboiloguinho {
+    height: 8vh;
+  }
+
+  #floraloguinho {
+    height: 8vh;
+    padding-right: 2vw;
+  }
+  #logotiposwift {
+    border-bottom: 0px;
+    height: 9vh;
+  }
+
+  #logotiporigi {
+    height: 8vh;
+  }
+
+  #logotippic {
+    height: 8vh;
+  }
+
+  #searaloguinho {
+    border-bottom: 0px;
+    height: 8vh;
+  }
+
+  .logosestagios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .grid-parceiros {
+    grid-template-columns: repeat(3, 28vw);
+  }
+
+  #jbslogotipo {
+    height: 6vh;
+  }
+
+  #originallogotipo {
+    height: 6vh;
+  }
+
+  #pplogotipo {
+    height: 6.5vh;
+  }
+
+  #floralogotipo {
+    height: 12.5vh;
+  }
+
+  #rurallogotipo {
+    height: 12vh;
+  }
+
+  #ambarlogotipo {
+    height: 8vh;
+  }
+
+  #eldoradologotipo {
+    height: 7vh;
+  }
+
+   #jftituloprincipal {
+    padding-top: 3vh;
+  }
+}
+
+@media only screen and (min-width: 660px){
+  #jftextoprincipal {
+    margin-right: 30px;
+    margin-bottom: 15px;
+    font-size: 2.6vh;
+  }
+
+  .texto-conclusao {
+    font-size: 1vw;
+  }
+
+  #jbslogotipo {
+    height: 7vh;
+  }
+
+  #originallogotipo {
+    height: 7vh;
+  }
+
+  #pplogotipo {
+    height: 7vh;
+  }
+
+  #floralogotipo {
+    height: 13vh;
+  }
+
+  #rurallogotipo {
+    height: 13vh;
+  }
+
+  #ambarlogotipo {
+    height: 9vh;
+  }
+
+  #eldoradologotipo {
+    height: 8vh;
+  }
+
+  #jftituloprincipal {
+    padding-top: 3vh;
+  }
+}
+
+@media only screen and (min-width: 720px){
+  body {
+    font-size: 2.4vh;
+    line-height: 3.2vh;
+  }
+
+  #textoap {
+    margin-left: 3vw;
+    max-width: 50vw;
+    line-height: 3.2vh;
+  }
+
+  .swiftcontainer {
+    min-height: 300px;
+  }
+
+  .title {
+    scale: 7;
+    min-width: 40vw;
+    min-height: 50vh;
+  }
+
+  .titulosimg {
+    font-size: 6vh;
+    line-height: 3vh;
+    margin-bottom: -10px;
+    margin-top: -60px;
+  }
+
+  #textoprincipal {
+    font-size: 4vh;
+    line-height: 4vh;
+    margin-left: 6vw;
+  }
+
+  .grid-parceiros {
+    grid-template-columns: repeat(3, 26vw);
+    grid-template-rows: repeat(3, 29vh);
+    grid-gap: 3vw;
+    z-index: 3;
+  }
+
+  .texto-conclusao {
+    font-size: 2.4vh;
+  }
+
+  #jbslogotipo {
+    height: 8vh;
+  }
+
+  #originallogotipo {
+    height: 8vh;
+  }
+
+  #pplogotipo {
+    height: 8vh;
+  }
+
+  #floralogotipo {
+    height: 14vh;
+  }
+
+  #rurallogotipo {
+    height: 16vh;
+  }
+
+  #ambarlogotipo {
+    height: 10vh;
+  }
+
+  #eldoradologotipo {
+    height: 9vh;
+  }
+}
+
+@media only screen and (min-width: 832px) {
+  .botaomais {
+    margin-right: 1vw;
+  }
+
+  .grid-parceiros {
+    grid-template-columns: repeat(3, 26vw);
+    grid-template-rows: repeat(3, 34vh);
+    grid-gap: 2vw;
+    margin-top: -70px;
+    z-index: 3;
+  }
+
+  
+  .button-plus{
+    width: 6vh;
+    height: 6vh;
+  }
+
+  .button-plus > p {
+    font-size: 5vh;  }
+
+
+  .titulosimg {
+    line-height: 3.4vh;
+    font-size: 4vh;
+  }
+
+  #jbslogotipo {
+    height: 9vh;
+  }
+
+  #originallogotipo {
+    height: 9vh;
+  }
+
+  #pplogotipo {
+    height: 9vh;
+  }
+
+  #floralogotipo {
+    height: 16vh;
+  }
+
+  .estitulosfriboi {
+    font-size: 2.5vh;
+  }
+
+  #rurallogotipo {
+    height: 17vh;
+  }
+
+  #ambarlogotipo {
+    height: 11vh;
+  }
+
+  #eldoradologotipo {
+    height: 10vh;
+  }
+  #jftextoprincipal {
+    font-size: 3vh;
+  }
+}
+
+@media only screen and (min-width: 944px) {
+  .textosestagios {
+    padding-top: 3vh;
+  }
+}
+
+@media only screen and (min-width: 1050px) {
+  .botaomais {
+    margin-left: 16vw;
+  }
+
+  #jbslogotipo {
+    height: 9vh;
+  }
+
+  #originallogotipo {
+    height: 10vh;
+  }
+
+  #floralogotipo {
+    height: 18vh;
+  }
+
+  #pplogotipo {
+    height: 10vh;
+  }
+
+  #rurallogotipo {
+    height: 19vh;
+  }
+
+  #ambarlogotipo {
+    height: 13vh;
+  }
+
+  #eldoradologotipo {
+    height: 13vh;
+  }
+
+  .orange {
+    background: #ef6421;
+  }
+
+   #jftituloprincipal {
+    padding-top: 5vh;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 2500px) {
+  #jbslogotipo {
+    height: 9vh;
+  }
+
+  #originallogotipo {
+    height: 10vh;
+  }
+
+  #pplogotipo {
+    height: 10vh;
+  }
+
+  #floralogotipo {
+    height: 17vh;
+  }
+
+  .button-plus:hover{
+    color: #af191e;
+    border: solid 2px transparent;
+    background-color: #ffff;
+    transition: all 0.4s ease-in-out;
+  }
+
+  #botao-original:hover {
+    color: #477530;
+  }
+  
+  #botao-flora:hover {
+    color: #627ad9;
+  }
+
+  #botao-picpay:hover{
+    color: #116632
+  }
+
+  #botao-rural:hover{
+    color: #0a323f;
+  }
+
+  #botao-ambar:hover{
+    color: #918336;
+  }
+
+  #botao-eldorado:hover{
+    color: #3b8081;
+  }
+
+  #jbscard:hover {
+    background: #af191e;
+  }
+
+  #originalcard:hover {
+    background: #477530;
+  }
+
+  #floracard:hover {
+    background: #627ad9;
+  }
+
+  #picpaycard:hover {
+    background: #116632;
+  }
+
+  #ruralcard:hover {
+    background: #0a323f;
+  }
+
+  #ambarcard:hover {
+    background: #918336;
+  }
+
+  #eldoradocard:hover {
+    background: #3b8081;
+  }
+
+  #rurallogotipo {
+    height: 20vh;
+  }
+
+  #ambarlogotipo {
+    height: 13vh;
+  }
+
+  #eldoradologotipo {
+    height: 13vh;
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(219, 220, 223);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #7174ff;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #2e3092;
+  transition: ease-in-out;
+  border-radius: 10px;
+}
+
+#myImg {
+  border-radius: 5px;
+  cursor: default;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;
+cursor: default;}
+
+
+.image-zoom-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	list-style: none;
+	font-size: 0px;
+  width: 100vw;
+  cursor: default;
+}
+.zoom-container {
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	width: 25%;
+	font-size: 16px;
+	font-size: 1rem;
+	border: 1px solid #fff;
+	vertical-align: top;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+  border-radius: 10px;
+  cursor: default;
+  max-width: 90vw;
+}
+.zoom-container img {
+	display: block;
+	width: 100%;
+	height: auto;
+	-webkit-transition: all .5s ease; /* Safari and Chrome */
+        -moz-transition: all .5s ease; /* Firefox */
+        -ms-transition: all .5s ease; /* IE 9 */
+        -o-transition: all .5s ease; /* Opera */
+        transition: all .5s ease;
+        cursor: default;
+}
+.zoom-container .zoom-caption {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 10;
+	background: rgba(0, 0, 0, .5);
+	-webkit-transition: all .5s ease; /* Safari and Chrome */
+        -moz-transition: all .5s ease; /* Firefox */
+        -ms-transition: all .5s ease; /* IE 9 */
+        -o-transition: all .5s ease; /* Opera */
+        transition: all .5s ease;
+        cursor: default;
+}
+.zoom-container .zoom-caption h3 {
+	display: block;
+	text-align: center;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 1.5em;
+	font-weight: 900;
+	letter-spacing: -1px;
+	text-transform: uppercase;
+	color: #fff;
+	margin: 23% 0 0;
+	padding: 10px 0;
+	border-top: 5px solid rgba(255, 255, 255, .15);
+	border-bottom: 5px solid rgba(255, 255, 255, .15);
+  cursor: default;
+}
+.zoom-container:hover img {
+	-webkit-transform:scale(1.25); /* Safari and Chrome */
+        -moz-transform:scale(1.25); /* Firefox */
+        -ms-transform:scale(1.25); /* IE 9 */
+        -o-transform:scale(1.25); /* Opera */
+         transform:scale(1.25);
+  cursor: default;
+}
+.zoom-container:hover .zoom-caption {
+	background: none;
+  cursor: default;
+}
+ 
+@media (max-width: 767px) {
+	.zoom-container {
+		width: 50%;
+    cursor: default;
+	}
+}
+
+@media (max-width: 480px) {
+	.zoom-container {
+		width: 100%;
+    cursor: default;
+	}
+
+  .zoom-container{
+    flex-direction: row;
+  }
+}
+
+.zoom-container{
+  margin-bottom: 3vh;
+}
+
+.galeria-label{
+  text-align: center;
+}

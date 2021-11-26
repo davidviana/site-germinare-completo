@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/header-style.css">
+    <link rel="stylesheet" href="../styles/footer-style.css">
+    <link rel="stylesheet" href="../styles/admissao-styles.css">
+    <link rel="shortcut icon" href="../imgs/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- SLICK -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css'>
+
+    <script src='https://code.jquery.com/jquery-1.11.0.min.js'></script>
+    <script src='https://code.jquery.com/jquery-migrate-1.2.1.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js'></script>
+
+
+    <script src="../scripts/main-header.js" defer></script>
+    <script src="../scripts/main-admissao.js" defer></script>
+    <title>Processo de Admissão</title>
+</head>
+<body>
+    <header>
+        <header id ="header">
+            <div class="mobile-container">
+            <div class="topnav">
+                <a href="page-inicial.html" class="active"><img id="logo" src="../imgs/img-contato/assets/logo.png"
+                        alt="logo da germinare em tema branco"></a>
+                <div id="myLinks">
+                    <a class="text" href="javascript:void(0)" onclick="abrirCardsFi(this)">admissão</a>
+                    <div id ="card-first">
+                        <a class = "hidden-menu" href="page-admissao.html#resultado">resultado</a>
+                        <a class = "hidden-menu" href="page-admissao.html#etapas">etapas</a>
+                        <a class = "hidden-menu" href="page-tech.html">germinare tech</a>
+                    </div>
+
+                    <a class="text" href="javascript:void(0)" onclick="abrirCardsSe(this)">acadêmico</a>
+                    <div id ="card-second">
+                        <a class = "hidden-menu" href="page-academico.html#formação-tech">formação técnica</a>
+                        <a class = "hidden-menu" href="page-academico.html#grade-de-disciplinas">grade de disciplina</a>
+                        <a class = "hidden-menu" href="page-academico.html#academias-germinare">academias</a>
+                        <a class = "hidden-menu" href="page-academico.html#projetos-germinare">projetos germinare</a>
+                    </div>
+
+                    <a class="text" href="javascript:void(0)" onclick="abrirCardsTh(this)">parcerias</a>
+                    <div id ="card-third">
+                        <a class = "hidden-menu" href="page-parceiros.html#jftituloprincipal">parceiros</a>
+                        <a class = "hidden-menu" href="page-parceiros.html#aulas-práticas">aulas práticas</a>
+                        <a class = "hidden-menu" href="page-parceiros.html#estágios">estágios</a>
+                        <a class = "hidden-menu" href="page-parceiros.html#titulogaleria">galeria</a>
+                    </div>
+    
+                    <a class="text" href="javascript:void(0)" onclick="abrirCardsFo(this)">sobre nós</a>
+                    <div id ="card-fourth">
+                        <a class="hidden-menu" href="page-sobre-nos.html#nossa-história">nossas história</a>
+                        <a class="hidden-menu" href="page-sobre-nos.html#nossas-crencas">nossa crenças</a>
+                        <a class="hidden-menu" href="page-sobre-nos.html#nossos-resultados">nossos resultados</a>
+                    </div>
+    
+                    <a class="text" href="javascript:void(0)" onclick="abrirCardsFiv(this)">contato</a>
+                    <div id ="card-five">
+                        <a class = "hidden-menu" href="page-contato.html#fale-conosco">fale conosco</a>
+                        <a class = "hidden-menu" href="page-contato.html#doacoes-info">doações</a>
+                    </div>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="abrirCards(this)" id="icon-header">
+                    <i  class="fa fa-bars"></i>
+                </a>
+                </div>
+            </div>
+        </header>
+    
+        <header id ="nav-container">
+            <div class="desktop-container">
+            <div class="topnav">
+                <div id="myLink">
+                    <a href="page-inicial.html" class="active"><img id="logo" src="../imgs/img-contato/assets/logo.png" alt="logo da germinare em tema branco"></a>
+                    <div class = "coluna">
+                        <a class="text" href="page-admissao.html" >admissão</a>
+                        <div class="barra orange">
+                            <div class ="card">
+                                <a class = "hidden-menu border" href="page-admissao.html#resultado">resultado</a>
+                                <a class = "hidden-menu border" href="page-admissao.html#etapas">etapas</a>
+                                <a class="hidden-menu" href="page-tech.html">germinare tech</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="coluna">
+                        <a class="text" href="page-academico.html" >acadêmico</a>
+                        <div class="barra">
+                            <div class ="card">
+                                <a class = "hidden-menu border" href="page-academico.html#formação-tech">formação técnica</a>
+                                <a class = "hidden-menu border" href="page-academico.html#grade-de-disciplinas">grade de disciplina</a>
+                                <a class = "hidden-menu border" href="page-academico.html#academias-germinare">academias</a>
+                                <a class = "hidden-menu" href="page-academico.html#projetos-germinare">projetos germinare</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="coluna">
+                        <a class="text" href="page-parceiros.html">parcerias</a>
+                        <div class="barra">
+                            <div class ="card">
+                                <a class = "hidden-menu border" href="page-parceiros.html#jftituloprincipal">parceiros</a>
+                                <a class = "hidden-menu border" href="page-parceiros.html#aulas-práticas">aulas práticas</a>
+                                <a class = "hidden-menu border" href="page-parceiros.html#estágios">estágios</a>
+                                <a class = "hidden-menu" href="page-parceiros.html#titulogaleria">galeria</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="coluna">
+                        <a class="text" href="page-sobre-nos.html">sobre nós</a>
+                        <div class="barra">
+                            <div class ="card">
+                                <a class="hidden-menu border" href="page-sobre-nos.html#nossa-história">nossas história</a>
+                                <a class="hidden-menu border" href="page-sobre-nos.html#nossas-crencas">nossa crenças</a>
+                                <a class="hidden-menu" href="page-sobre-nos.html#nossos-resultados">nossos resultados</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="coluna">
+                        <a class="text" href="page-contato.html">contato</a>
+                        <div class="barra">
+                            <div class ="card">
+                                <a class = "hidden-menu border" href="page-contato.html#fale-conosco">fale conosco</a>
+                                <a class = "hidden-menu" href="page-contato.html#doacoes-info">doações</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </header>
+
+    <main id="main">
+        <div class="inicio">
+            <div class="banner">
+                <div class="banner-text">
+                    <div class="title-admissao">
+                        <h3 id="resultado">Resultados</h3>
+                        <h1>PROCESSO DE SELEÇÃO</h1>
+                        <h2>2021-2022</h2>
+                    </div>
+                    <p>A lista de convocados para a próxima etapa do Processo de Admissão está disponível!</p>
+                    <a href="http://www.escolagerminare.org.br/wp-content/uploads/2015/08/Lista-de-Convocados-2%C2%B0-Etapa-2021-2022.pdf" target="blank_"><button>CONFIRA AGORA!</button></a>
+                </div>
+            </div>
+
+            <div class="alertas">
+                <p class="alerta-1" data-aos="fade-right">Lembrando que, conforme o calendário escolar, não haverá expediente nos dias 06 e 07 de setembro de 2021. As atividades serão retomadas dia 08 de setembro (quarta-feira).</p>
+                <p class="alerta-2" data-aos="fade-left">Aos convocados para a segunda fase, informamos que todas as entrevistas serão realizadas de modo presencial com   candidatos e responsáveis. As respectivas datas e horários serão enviados por e-mail e disponibilizados na Área do Candidato em breve.</p>    
+            </div>
+
+            <div class="etapas" id="etapas">
+                <div class="etapas-texto"  data-aos="fade-right">
+                    <h2>Etapas</h2>
+                    <p> <span class="bold">1.</span> INSCRIÇÃO <br>
+                        <span class="bold">2.</span> AVALIAÇÃO COGNITIVA E PESQUISA DE PERFIL <br>
+                        <span class="bold">3.</span> ENTREVISTAS <br>
+                        <span class="bold">4.</span> MATRÍCULA <br>
+                    </p>
+                </div>
+            </div>
+
+            <div class="container-carousel">
+                <div class="carousel">
+                    <div class="card-carousel">
+                        <p>Em São Paulo, o Processo de Admissão é somente para alunos matriculados no 5° ano do Ensino Fundamental I. Em relação a outros estados, o Processo de Admissão está aberto para quaisquer séries da escola Germinare.</p>
+                    </div>
+                
+                    <div class="card-carousel">
+                        <p>A inclusão do CPF é obrigatória. Devido ao período de pandemia, abriremos uma exceção para os candidatos que não o possuam. No momento da inscrição, deixe de CPF em branco.</p>
+                    </div>
+                
+                    <div class="card-carousel">
+                        <p>É responsabilidade exclusiva do candidato e dos responsáveis informarem-se sobre calendário, inscrições, convocações para as provas, locais de exame e listas de convocados para matrícula, bem como sobre todas as etapas e procedimentos para matrícula virtual.</p>
+                    </div>
+                
+                    <div class="card-carousel">
+                        <p>Durante e depois do Processo de Admissão, não serão aceitos pedidos de revisão de notas ou verificação de provas, nem serão dadas informações sobre a classificação dos inscritos.</p>
+                    </div>
+                    
+                    <div class="card-carousel">
+                        <p>Todas as informações sobre o processo e suas etapas serão enviadas para o e-mail e número de telefone celular cadastrados no momento da inscrição.</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="flex-container" id="container-etapas">
+                <div class="flex-item" id="inscricao-item" data-aos="zoom-in">
+                    <h1>Inscrição</h1>
+                    <p class="textosdiv">
+                        A inscrição é feita por meio do formulário disponível no link abaixo e pode ser realizada de 31/05/2021 a 31/07/2021.
+                        Para realizá-la, o candidato deve estar matriculado no 5° ano do Ensino Fundamental I. <br>
+                        Após a efetuação da inscrição, os responsáveis receberão um SMS e um e-mail de confirmação, conforme o número de
+                        telefone e endereço de e-mail cadastrados
+        
+                        Criamos a Área do Candidato, que pode ser acessada por meio do RG e da data de nascimento do(a) candidato(a). Nessa
+                        plataforma colocamos as datas e horários de todas as etapas, bem como as informações necessárias sobre o processo. <br><br><br>
+                        DICA: Cadastre um endereço de e-mail que seja de fácil acesso para o(a)candidato(a) e os responsáveis, pois a
+                        comunicação do processo de admissão é feita por esse meio.
+        
+                    </p><button onclick="leiaMais(this)" class="saibamais" href=""> &plus; leia mais</button>
+                </div>
+        
+                <div class="flex-item" id="testes-item" data-aos="zoom-in">
+                    <h1>
+                        testes cognitivos
+                    </h1>
+                    <p class="textosdiv">
+                    Nesta etapa, o candidato realizará uma avaliação de questões dissertativas de Língua Portuguesa e Matemática sobre
+                    o conteúdo abordado até o 5°ano (não esqueça de levar lápis, borracha, caneta esferográfica azul ou preta, e sua
+                    máscara)
+                            <br><br>
+                            &#8226; A avaliação cognitiva ocorrerá durante em data e horário informados por e-mail uma semana antes do dia da avaliação; <br>
+                            &#8226; Após 10 minutos do início da avaliação, não será mais permitida a entrada do candidato no local; <br>
+                            &#8226; O(A) candidato(a) terá, no máximo, 1 hora para responder às questões e realizar a pesquisa de perfil; <br>
+                            &#8226; Não será permitida, durante a realização da avaliação, a comunicação entre os candidatos ou a utilização de materiais
+                            de consulta. <br>
+                            &#8226; Não haverá, por qualquer motivo, prorrogação do tempo previsto para aplicação da avaliação.
+        
+                    </p><button onclick="leiaMais(this)" class="saibamais"> &plus; leia mais</button>
+                </div>
+        
+                <div class="flex-item" id="entrevistas-item" data-aos="zoom-in">
+                    <h1>
+                        Pesquisas de Perfil
+                    </h1>
+                    <p class="textosdiv">
+                        Esta etapa do processo será realizada em conjunto com a avaliação cognitiva, e se trata de um questionário simples de
+                        duas etapas. Os aplicadores de prova disponibilizarão todos os materiais necessários para a realização da pesquisa de
+                        perfil.
+                        <br><br>
+                        &#8226; Esta etapa consiste em um teste rápido e adaptado para candidatos de 10 a 11 anos que pretendem ingressar na Germinare
+                        em 2022.
+                        <br><br>
+                        &#8226; Sem critérios cognitivos, o software analisa as respostas dadas sendo capaz de traçar de maneira detalhada um
+                        resultado único e individual.
+                        <br><br><br><br><br><br>
+                    </p><button onclick="leiaMais(this)"  class="saibamais"> &plus; leia mais</button>
+                </div>
+        
+                <div class="flex-item" id="matricula-item" data-aos="zoom-in">
+                        <h1>
+                            Entrevistas
+                        </h1>
+                        <p class="textosdiv">
+                            Nesta etapa, o candidato e os responsáveis participarão de uma entrevista. A entrevista terá duração de aproximadamente uma hora e será realizada na escola Germinare. <br>
+                            &#8226; Caso a família não possa participar da entrevista na data marcada, deve enviar um e-mail com antecedência
+                            para propor remarcação da entrevista; <br>
+                            &#8226; O candidato deverá chegar 10 minutos antes do horário marcado e aguardar na sala de espera; <br>
+                            &#8226; Em caso de atraso superior ao limite de 5 minutos, o candidato não poderá mais participar 
+                            da entrevista e não será permitido remarcação, salvo exceções auditadas pela equipe de admissão; <br>
+                            &#8226; As entrevistas serão gravadas pela equipe da admissão para futuras consultas, logo, não serão
+                            divulgadas por qualquer via. <br>
+                            &#8226; O não cumprimento de qualquer regra poderá implicar na desclassificação do candidato sem direito a nova chance. <br>
+        
+                        </p><button onclick="leiaMais(this)" class="saibamais"> &plus; leia mais</button>
+                </div>
+            </div>
+    
+            <div class="container-modal" id="container-etapas-desktop">
+                <div class="card-modal" id="card-um">
+                    <h1>inscrição</h1>
+                    <p>A inscrição pode ser realizada de 31/05/2021 a 31/07/2021 para aqueles matriculado(a) no 5° ano do Ensino Fundamental I.</p>
+                    <div id="myModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <p>Após a efetuação da inscrição, os responsáveis receberão um SMS e um e-mail de confirmação, conforme o número de telefone e endereço de e-mail cadastrados. Criamos a Área do Candidato, que pode ser acessada por meio do RG e da data de nascimento do(a) candidato(a). Nessa plataforma colocamos as datas e horários de todas as etapas, bem como as informações necessárias sobre o processo.
+                            </p>
+                            <p style="margin-top: 30px;"><span style="font-weight:600;">DICA</span>: Cadastre um endereço de e-mail que seja de fácil acesso para o(a)candidato(a) e os responsáveis, pois a comunicação do processo de admissão é feita por esse meio.</p>
+                        </div>
+                    </div>
+                    <button class="btn-saiba-mais" id="myBtn">saiba mais</button>
+                </div>
+            
+                <div class="card-modal" id="card-dois">
+                    <h1>avaliação cognitiva</h1>
+                    <p>Avaliação de questões dissertativas de Língua Portuguesa e Matemática sobre o conteúdo abordado até o 5°ano.</p>
+                    <div id="myModal-dois" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <ul>
+                                <li>Não esqueça de levar lápis, borracha, caneta esferográfica azul ou preta, e sua máscara.</li>
+                                <li>A avaliação cognitiva ocorrerá durante em data e horário informados por e-mail uma semana antes do dia da avaliação;</li>
+                                <li>Após 10 minutos do início da avaliação, não será mais permitida a entrada do(a) candidato(a) no local;</li>
+                                <li>O(A) candidato(a) terá, no máximo, 1 hora para responder às questões e realizar a pesquisa de perfil;</li>
+                                <li>Não será permitida, durante a realização da avaliação, a comunicação entre os candidatos ou a utilização de materiais de consulta.</li>
+                                <li>Não haverá, por qualquer motivo, prorrogação do tempo previsto para aplicação da avaliação.</li>
+                                <li>Como todas as etapas do Processo de Admissão 2021/2022, essa etapa tem caráter eliminatório.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button class="btn-saiba-mais" id="myBtn-dois">saiba mais</button>
+                </div>
+        
+                <div class="card-modal" id="card-tres">
+                    <h1>pesquisa de perfil</h1>
+                    <p>Questionário simples de duas etapas, em que os aplicadores de prova irão realizar uma pesquisa de perfil dos alunos.</p>
+                    <div id="myModal-tres" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <ul>
+                                <li>Esta etapa consiste em um teste rápido e adaptado para candidatos de 10 a 11 anos que pretendem ingressar na Germinare em 2022.</li>
+                                <li>Sem critérios cognitivos, o software analisa as respostas dadas sendo capaz de traçar de maneira detalhada um resultado único e individual.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button class="btn-saiba-mais" id="myBtn-tres">saiba mais</button>
+                </div>
+            
+                <div class="card-modal" id="card-quatro">
+                    <h1>entrevistas</h1>
+                    <p>O(a) candidato(a) e os responsáveis participarão de uma entrevista de duração aproximada de uma hora, realizada na escola Germinare.</p>
+                    <div id="myModal-quatro" class="modal orientações">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <h1 style="text-transform: uppercase; font-weight: 800;">orientações gerais</h1>
+                            <ul>
+                                <li>Caso a família não possa participar da entrevista na data e horário marcados, deve enviar um e-mail com antecedência para propor remarcação da entrevista;</li>
+                                <li>O(a) candidato(a) deverá chegar 10 minutos antes do horário marcado e aguardar na sala de espera;</li>
+                                <li>Em caso de não comparecimento ou atraso superior ao limite de 5 minutos, o(a) candidato(a) não poderá mais participar da entrevista e não será permitido remarcação, salvo exceções auditadas pela equipe de admissão;</li>
+                                <li>Não será permitido nenhum registro do processo, seja este por meio de foto, vídeo ou texto;</li>
+                                <li>As entrevistas serão gravadas pela equipe da admissão para futuras consultas, logo essas gravações não serão divulgadas por qualquer via.</li>
+                                <li>O não cumprimento de qualquer regra acima poderá implicar na desclassificação do(a) candidato(a) sem direito a uma nova chance.</li>
+                                <li>Podem participar da entrevista todos aqueles que residem junto com o(a) candidato(a) e acompanham seu desenvolvimento</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button class="btn-saiba-mais" id="myBtn-quatro">saiba mais</button>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+
+        <footer id="footer">
+            <div id ="social">
+                <a href="https://www.instagram.com/escolagerminare/"><img src="../imgs/img-contato/assets/img/Instagram.png" alt="logo do instagram" class ="logo"></a>
+                <a href="https://www.youtube.com/channel/UCtfT0wIFhW2jyCMR0ZtBuzg"><img src="../imgs/img-contato/assets/img/YouTube.png" alt="logo do youtube" class ="logo"></a>
+                <a href="https://www.linkedin.com/company/instituto-germinare?trk=top_nav_home"><img src="../imgs/img-contato/assets/img/Linkedin.png" alt="logo do linkedin" class ="logo"></a>
+                <a href="https://www.facebook.com/germinareoficial"><img src="../imgs/img-contato/assets/img/Facebook.png" alt="logo do facebook" class ="logo"></a>
+            </div>
+            <div id ="contact">
+                <p>R. Irineu José Bordon - Vila Jaguara, São Paulo - SP, 05120-060</p>
+                <p>Telefone: (11) 3623-6000 </p>
+                <p>Escola Germinare – Escola de Negócios © 2021</p>
+            </div>
+        </footer>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    </body>
+</html> 

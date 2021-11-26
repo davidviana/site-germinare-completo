@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/portal-germinare-style.css">
+    <script src="../scripts/main-portal-germinare.js" defer></script>
+    <link rel="shortcut icon" href="../imgs/favicon.ico" type="image/x-icon">
+    <title>Portal Germinare</title>
+</head>
+<body id ="body">
+    <main id="main">
+        <img src="../imgs/img-portal-germinare/assets/portal-aluno-img/logo.png" alt="brasão da escola germinare" id="logo">
+        <form id ="container">
+            <span id="user-msg" class ="msg">
+            </span>
+            <div>
+                <input 
+                type="text"
+                placeholder="Usuário"
+                class="input"
+                name="user"
+                id="user"
+                onfocusout="validaUser()"
+                required>
+                <img src="../imgs/img-portal-germinare/assets/portal-aluno-img/user-icon.png" alt="icone de usuário" id="icon">
+            </div>
+
+            <span id="password-msg" class ="msg">
+            </span>
+            <div>
+                <input 
+                type="password"
+                placeholder="Senha"
+                class="input"
+                name="password" 
+                id="password"
+                onfocusout="validaPassword()"
+                required>
+                <img src="../imgs/img-portal-germinare/assets/portal-aluno-img/open.png" alt="icone de usuário" id="icon-eye" onclick="mostrarSenha()">
+            </div>
+
+            <form action="" method="get" id="container-btn">
+                <a href="" id="jezus"><button id="btn" type="button" onclick="enterPage()">Entrar</button></a>
+            </form>
+        </form>
+    </main>
+</body>
+</html>

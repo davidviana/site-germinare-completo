@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/header-style.css">
+    <link rel="stylesheet" href="../styles/footer-style.css">
+    <link rel="stylesheet" href="../styles/gazeta-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../imgs/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../scripts/main-header.js" defer></script>
+    <title>Gazeta Germinare</title>
+</head>
+
+<body>
+    <header>
+        <header id ="header">
+            <div class="mobile-container">
+            <div class="topnav">
+                <a href="page-inicial.html" class="active"><img id="logo" src="../imgs/img-contato/assets/logo.png"
+                        alt="logo da germinare em tema branco"></a>
+                <div id="myLinks">
+                    <a class="text" href="javascript:void(0)" onclick="abrirCardsFi(this)">admissão</a>
+                    <div id ="card-first">
+                        <a class = "hidden-menu" href="page-admissao.html#resultado">resultado</a>
+                        <a class = "hidden-menu" href="page-admissao.html#etapas">etapas</a>
+                        <a class = "hidden-menu" href="page-tech.html">germinare tech</a>
+                    </div>
+
+                    <a class="text" href="javascript:void(0)" onclick="abrirCardsSe(this)">acadêmico</a>
+                    <div id ="card-second">
+                        <a class = "hidden-menu" href="page-academico.html#formação-tech">formação técnica</a>
+                        <a class = "hidden-menu" href="page-academico.html#grade-de-disciplinas">grade de disciplina</a>
+                        <a class = "hidden-menu" href="page-academico.html#academias-germinare">academias</a>
+                        <a class = "hidden-menu" href="page-academico.html#projetos-germinare">projetos germinare</a>
+                    </div>
+
+                    <a class="text" href="javascript:void(0)" onclick="abrirCardsTh(this)">parcerias</a>
+                    <div id ="card-third">
+                        <a class = "hidden-menu" href="page-parceiros.html#jftituloprincipal">parceiros</a>
+                        <a class = "hidden-menu" href="page-parceiros.html#aulas-práticas">aulas práticas</a>
+                        <a class = "hidden-menu" href="page-parceiros.html#estágios">estágios</a>
+                        <a class = "hidden-menu" href="page-parceiros.html#titulogaleria">galeria</a>
+                    </div>
+    
+                    <a class="text" href="javascript:void(0)" onclick="abrirCardsFo(this)">sobre nós</a>
+                    <div id ="card-fourth">
+                        <a class="hidden-menu" href="page-sobre-nos.html#nossa-história">nossas história</a>
+                        <a class="hidden-menu" href="page-sobre-nos.html#nossas-crencas">nossa crenças</a>
+                        <a class="hidden-menu" href="page-sobre-nos.html#nossos-resultados">nossos resultados</a>
+                    </div>
+    
+                    <a class="text" href="javascript:void(0)" onclick="abrirCardsFiv(this)">contato</a>
+                    <div id ="card-five">
+                        <a class = "hidden-menu" href="page-contato.html#fale-conosco">fale conosco</a>
+                        <a class = "hidden-menu" href="page-contato.html#doacoes-info">doações</a>
+                    </div>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="abrirCards(this)" id="icon-header">
+                    <i  class="fa fa-bars"></i>
+                </a>
+                </div>
+            </div>
+        </header>
+    
+        <header id ="nav-container">
+            <div class="desktop-container">
+            <div class="topnav">
+                <div id="myLink">
+                    <a href="page-inicial.html" class="active"><img id="logo" src="../imgs/img-contato/assets/logo.png" alt="logo da germinare em tema branco"></a>
+                    <div class = "coluna">
+                        <a class="text" href="page-admissao.html" >admissão</a>
+                        <div class="barra orange">
+                            <div class ="card">
+                                <a class = "hidden-menu border" href="page-admissao.html#resultado">resultado</a>
+                                <a class = "hidden-menu border" href="page-admissao.html#etapas">etapas</a>
+                                <a class="hidden-menu" href="page-tech.html">germinare tech</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="coluna">
+                        <a class="text" href="page-academico.html" >acadêmico</a>
+                        <div class="barra">
+                            <div class ="card">
+                                <a class = "hidden-menu border" href="page-academico.html#formação-tech">formação técnica</a>
+                                <a class = "hidden-menu border" href="page-academico.html#grade-de-disciplinas">grade de disciplina</a>
+                                <a class = "hidden-menu border" href="page-academico.html#academias-germinare">academias</a>
+                                <a class = "hidden-menu" href="page-academico.html#projetos-germinare">projetos germinare</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="coluna">
+                        <a class="text" href="page-parceiros.html">parcerias</a>
+                        <div class="barra">
+                            <div class ="card">
+                                <a class = "hidden-menu border" href="page-parceiros.html#jftituloprincipal">parceiros</a>
+                                <a class = "hidden-menu border" href="page-parceiros.html#aulas-práticas">aulas práticas</a>
+                                <a class = "hidden-menu border" href="page-parceiros.html#estágios">estágios</a>
+                                <a class = "hidden-menu" href="page-parceiros.html#titulogaleria">galeria</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="coluna">
+                        <a class="text" href="page-sobre-nos.html">sobre nós</a>
+                        <div class="barra">
+                            <div class ="card">
+                                <a class="hidden-menu border" href="page-sobre-nos.html#nossa-história">nossas história</a>
+                                <a class="hidden-menu border" href="page-sobre-nos.html#nossas-crencas">nossa crenças</a>
+                                <a class="hidden-menu" href="page-sobre-nos.html#nossos-resultados">nossos resultados</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="coluna">
+                        <a class="text" href="page-contato.html">contato</a>
+                        <div class="barra">
+                            <div class ="card">
+                                <a class = "hidden-menu border" href="page-contato.html#fale-conosco">fale conosco</a>
+                                <a class = "hidden-menu" href="page-contato.html#doacoes-info">doações</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </header>
+
+    <main id="main">
+        <div class="banner-container">
+            <h1>Gazeta Germinare</h1>
+            <p>A Gazeta Germinare é um jornal mensal da escola focado nos adolescentes, envolvendo notícias, entrevistas, inovação e liderança. Toda edição é composta por temas atuais, matérias exclusivas e outras novidades. <br><b>Confira já!</b></p>
+            
+        </div>
+        <div class="files-container">
+            <a href="../imgs/img-gazeta/assets/pdf/edicao1.pdf" target="_blank" class="container">
+                <img src="../imgs/img-gazeta/assets/img/logo-branca.png" alt="Logo da Germinare">
+                <div>
+                    <h1>Gazeta Germinare</h1>
+                    <p>1° Edição</p>                        
+                </div>
+                <svg aria-hidden="true" color="white" focusable="false" data-prefix="fas" data-icon="chevron-right" class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
+            </a>
+            <a href="../imgs/img-gazeta/assets/pdf/edicao2.pdf" target="_blank" class="container">
+                <img src="../imgs/img-gazeta/assets/img/logo-branca.png" alt="Logo da Germinare">
+                <div>
+                    <h1>Gazeta Germinare</h1>
+                    <p>2° Edição</p>                        
+                </div>
+                <svg aria-hidden="true" color="white" focusable="false" data-prefix="fas" data-icon="chevron-right" class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
+            </a>
+            <a href="../imgs/img-gazeta/assets/pdf/edicao3.pdf" target="_blank" class="container">
+                <img src="../imgs/img-gazeta/assets/img/logo-branca.png" alt="Logo da Germinare">
+                <div>
+                    <h1>Gazeta Germinare</h1>
+                    <p>3° Edição</p>                        
+                </div>
+                <svg aria-hidden="true" color="white" focusable="false" data-prefix="fas" data-icon="chevron-right" class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
+            </a>
+            <a href="../imgs/img-gazeta/assets/pdf/edicao4.pdf" target="_blank" class="container">
+                <img src="../imgs/img-gazeta/assets/img/logo-branca.png" alt="Logo da Germinare">
+                <div>
+                    <h1>Gazeta Germinare</h1>
+                    <p>4° Edição</p>                        
+                </div>
+                <svg aria-hidden="true" color="white" focusable="false" data-prefix="fas" data-icon="chevron-right" class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
+            </a>
+            <a href="../imgs/img-gazeta/assets/pdf/edicao5.pdf" target="_blank" class="container">
+                <img src="../imgs/img-gazeta/assets/img/logo-branca.png" alt="Logo da Germinare">
+                <div>
+                    <h1>Gazeta Germinare</h1>
+                    <p>5° Edição</p>                        
+                </div>
+                <svg aria-hidden="true" color="white" focusable="false" data-prefix="fas" data-icon="chevron-right" class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
+            </a>
+            <a href="../imgs/img-gazeta/assets/pdf/edicao6.pdf" target="_blank" class="container">
+                <img src="../imgs/img-gazeta/assets/img/logo-branca.png" alt="Logo da Germinare">
+                <div>
+                    <h1>Gazeta Germinare</h1>
+                    <p>6° Edição</p>                        
+                </div>
+                <svg aria-hidden="true" color="white" focusable="false" data-prefix="fas" data-icon="chevron-right" class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
+            </a>
+            <a href="../imgs/img-gazeta/assets/pdf/edicao7.pdf" target="_blank" class="container">
+                <img src="../imgs/img-gazeta/assets/img/logo-branca.png" alt="Logo da Germinare">
+                <div>
+                    <h1>Gazeta Germinare</h1>
+                    <p>7° Edição</p>                        
+                </div>
+                <svg aria-hidden="true" color="white" focusable="false" data-prefix="fas" data-icon="chevron-right" class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
+            </a>
+            <a href="../imgs/img-gazeta/assets/pdf/edicao8.pdf" target="_blank" class="container">
+                <img src="../imgs/img-gazeta/assets/img/logo-branca.png" alt="Logo da Germinare" >
+                <div>
+                    <h1>Gazeta Germinare</h1>
+                    <p>8° Edição</p>                    
+                </div>
+                <svg aria-hidden="true" color="white" focusable="false" data-prefix="fas" data-icon="chevron-right" class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
+            </a>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <div id ="social">
+            <a href="https://www.instagram.com/escolagerminare/"target="_blank"><img src="../imgs/img-academico/footer/Instagram.png" alt="logo do instagram" class ="logo"></a>
+            <a href="https://www.youtube.com/channel/UCtfT0wIFhW2jyCMR0ZtBuzg"target="_blank"><img src="../imgs/img-academico/footer/YouTube.png" alt="logo do youtube" class ="logo"></a>
+            <a href="https://www.linkedin.com/company/instituto-germinare/?trk=top_nav_home"target="_blank"><img src="../imgs/img-academico/footer/Linkedin.png" alt="logo do linkedin" class ="logo"></a>
+            <a href="https://www.facebook.com/germinareoficial" target="_blank"><img src="../imgs/img-academico/footer/Facebook.png" alt="logo do facebook" class ="logo"></a>
+        </div>
+        <div id ="contact">
+            <p>R. Irineu José Bordon - Vila Jaguara, São Paulo - SP, 05120-060</p>
+            <p>Telefone: (11) 3623-6000 </p>
+            <p>Escola Germinare – Escola de Negócios © 2021</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

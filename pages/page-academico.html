@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/header-style.css">
+    <link rel="stylesheet" href="../styles/footer-style.css">
+    <link rel="stylesheet" href="../styles/academico-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="../imgs/favicon.ico" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="../scripts/main-header.js" defer></script>
+    <script src="../scripts/main-academico.js" defer></script>
+    <!--SLICK-->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css'>
+    <link rel="stylesheet" href="./styles/carousel-styles.css">
+    <!--SLICK-->
+    <title>Projeto Acadêmico</title>
+</head>
+<body>
+    <header>
+        <header id ="header">
+            <div class="mobile-container">
+            <div class="topnav">
+                <a href="page-inicial.html" class="active"><img id="logo" src="../imgs/img-contato/assets/logo.png"
+                        alt="logo da germinare em tema branco"></a>
+                <div id="myLinks">
+                    <a class="text" href="javascript:void(0)" onclick="abrirCardsFi(this)">admissão</a>
+                    <div id ="card-first">
+                        <a class = "hidden-menu" href="page-admissao.html#resultado">resultado</a>
+                        <a class = "hidden-menu" href="page-admissao.html#etapas">etapas</a>
+                        <a class = "hidden-menu" href="page-tech.html">germinare tech</a>
+                    </div>
+
+                    <a class="text" href="javascript:void(0)" onclick="abrirCardsSe(this)">acadêmico</a>
+                    <div id ="card-second">
+                        <a class = "hidden-menu" href="page-academico.html#formação-tech">formação técnica</a>
+                        <a class = "hidden-menu" href="page-academico.html#grade-de-disciplinas">grade de disciplina</a>
+                        <a class = "hidden-menu" href="page-academico.html#academias-germinare">academias</a>
+                        <a class = "hidden-menu" href="page-academico.html#projetos-germinare">projetos germinare</a>
+                    </div>
+
+                    <a class="text" href="javascript:void(0)" onclick="abrirCardsTh(this)">parcerias</a>
+                    <div id ="card-third">
+                        <a class = "hidden-menu" href="page-parceiros.html#jftituloprincipal">parceiros</a>
+                        <a class = "hidden-menu" href="page-parceiros.html#aulas-práticas">aulas práticas</a>
+                        <a class = "hidden-menu" href="page-parceiros.html#estágios">estágios</a>
+                        <a class = "hidden-menu" href="page-parceiros.html#titulogaleria">galeria</a>
+                    </div>
+    
+                    <a class="text" href="javascript:void(0)" onclick="abrirCardsFo(this)">sobre nós</a>
+                    <div id ="card-fourth">
+                        <a class="hidden-menu" href="page-sobre-nos.html#nossa-história">nossas história</a>
+                        <a class="hidden-menu" href="page-sobre-nos.html#nossas-crencas">nossa crenças</a>
+                        <a class="hidden-menu" href="page-sobre-nos.html#nossos-resultados">nossos resultados</a>
+                    </div>
+    
+                    <a class="text" href="javascript:void(0)" onclick="abrirCardsFiv(this)">contato</a>
+                    <div id ="card-five">
+                        <a class = "hidden-menu" href="page-contato.html#fale-conosco">fale conosco</a>
+                        <a class = "hidden-menu" href="page-contato.html#doacoes-info">doações</a>
+                    </div>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="abrirCards(this)" id="icon-header">
+                    <i  class="fa fa-bars"></i>
+                </a>
+                </div>
+            </div>
+        </header>
+    
+        <header id ="nav-container">
+            <div class="desktop-container">
+            <div class="topnav">
+                <div id="myLink">
+                    <a href="page-inicial.html" class="active"><img id="logo" src="../imgs/img-contato/assets/logo.png" alt="logo da germinare em tema branco"></a>
+                    <div class = "coluna">
+                        <a class="text" href="page-admissao.html" >admissão</a>
+                        <div class="barra">
+                            <div class ="card">
+                                <a class = "hidden-menu border" href="page-admissao.html#resultado">resultado</a>
+                                <a class = "hidden-menu border" href="page-admissao.html#etapas">etapas</a>
+                                <a class="hidden-menu" href="page-tech.html">germinare tech</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="coluna">
+                        <a class="text" href="page-academico.html" >acadêmico</a>
+                        <div class="barra orange">
+                            <div class ="card">
+                                <a class = "hidden-menu border" href="page-academico.html#formação-tech">formação técnica</a>
+                                <a class = "hidden-menu border" href="page-academico.html#grade-de-disciplinas">grade de disciplina</a>
+                                <a class = "hidden-menu border" href="page-academico.html#academias-germinare">academias</a>
+                                <a class = "hidden-menu" href="page-academico.html#projetos-germinare">projetos germinare</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="coluna">
+                        <a class="text" href="page-parceiros.html">parcerias</a>
+                        <div class="barra">
+                            <div class ="card">
+                                <a class = "hidden-menu border" href="page-parceiros.html#jftituloprincipal">parceiros</a>
+                                <a class = "hidden-menu border" href="page-parceiros.html#aulas-práticas">aulas práticas</a>
+                                <a class = "hidden-menu border" href="page-parceiros.html#estágios">estágios</a>
+                                <a class = "hidden-menu" href="page-parceiros.html#titulogaleria">galeria</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="coluna">
+                        <a class="text" href="page-sobre-nos.html">sobre nós</a>
+                        <div class="barra">
+                            <div class ="card">
+                                <a class="hidden-menu border" href="page-sobre-nos.html#nossa-história">nossas história</a>
+                                <a class="hidden-menu border" href="page-sobre-nos.html#nossas-crencas">nossa crenças</a>
+                                <a class="hidden-menu" href="page-sobre-nos.html#nossos-resultados">nossos resultados</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="coluna">
+                        <a class="text" href="page-contato.html">contato</a>
+                        <div class="barra">
+                            <div class ="card">
+                                <a class = "hidden-menu border" href="page-contato.html#fale-conosco">fale conosco</a>
+                                <a class = "hidden-menu" href="page-contato.html#doacoes-info">doações</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </header>
+
+    <main id="main">
+        <div class="banner">
+            <div class="banner-text">
+                <h2>Transformar o</h2>
+                <h1>Brasil através</h1>
+                <h2>da educação</h2>
+                <p>Educação com acesso a conhecimentos de Gestão de Negócios para formar jovens administradores de empresas.</p>
+                <a href="#scroll-here"><img src="../imgs/img-academico/arrow-down.png" alt="Seta Scroll" class="scroll-arrow" href="scroll-here"></a>
+            </div>
+        </div>
+
+        <div class="container-academico" id="scroll-here">
+            <div class="academico-left">
+                <h1 data-aos="fade-right" id="formação-tech">Formação <span class="tecnica-orange">Técnica</span></h1>
+                <p data-aos="fade-right" data-aos-duration="1500">A escola Germinare com o objetivo de formar jovens administradores, oferece uma educação única e inteiramente gratuita com aulas de gestão sobre as diferentes áreas das empresas, abrangendo todas as habilidades e competências importantes no seu desenvolvimento.</p>
+                <p data-aos="fade-right" data-aos-duration="1500">Em complemento a estas matérias, a escola possui aulas lecionadas por profissionais das empresas do grupo J&F, com o objetivo de exemplificar o dia a dia no trabalho e expandir o conhecimento dos alunos. É uma instituição aprovada pelo MEC – Ministério da Educação – e reconhecida pela UNESCO. </p>
+            </div>
+            <div class="academico-right">
+                <img src="../imgs/img-academico/projeto/logo-academias.png" alt="logo das academias" width="50px" id="logo-academias">
+                <h2 class="projeto-academico-title">Projeto <br> <span class="acad-orange">Acadêmico</span></h2>
+
+            </div>
+        </div>
+        <div class="subjects" id="grade-de-disciplinas">
+            <div class="subject-title">
+                <h1 class="grade-de-materias" data-aos="fade-up">Grade de Disciplinas</h1>
+                <h1 class="gestao-e-base" data-aos="fade-up">Gestão e Base</h1>
+                <p data-aos="fade-up" data-aos-duration="1500">O foco principal é formar de maneira efetiva jovens gestores e líderes para o mercado de trabalho, assim a escola oferece disciplinas com foco em administração de negócios.</p>
+            </div>
+            <div class="container-subjects">
+                <div class="subject-language" data-aos="zoom-in-up" data-aos-duration="1700">
+                    <h3>Linguagens e <br>códigos</h3>
+                    <ul>
+                        <li>Português</li>
+                        <li>Inglês</li>
+                        <li>Condicionamento <br> Físico</li>
+                    </ul>
+                </div>
+                <div class="subject-math" data-aos="zoom-in-up" data-aos-duration="1700">
+                    <h3>Matemática e suas tecnologias</h3>
+                    <ul>
+                        <li>Matemática</li>
+                        <li>Geometria</li>
+                        <li>Lógica</li>
+                        <li>Estatística</li>
+                    </ul>
+                </div>
+                <div class="subject-nature" data-aos="zoom-in-up" data-aos-duration="1700">
+                    <h3>Ciências da Natureza</h3>
+                    <ul>
+                        <li>Biologia</li>
+                        <li>Química</li>
+                        <li>Física</li>
+                        <li>Gestão de Pessoas</li>
+                        <li>Orientação de estudos</li>
+                    </ul>
+                </div>
+                <div class="subject-human" data-aos="zoom-in-up" data-aos-duration="1700">
+                    <h3>Ciências Humanas</h3>
+                    <ul>
+                        <li>História</li>
+                        <li>Sociologia</li>
+                        <li>Geografia</li>
+                        <li>Filosofia</li>
+                    </ul>
+                </div>
+                <div class="subject-control" data-aos="zoom-in-up" data-aos-duration="1700">
+                    <h3>Controladoria</h3>
+                    <ul>
+                        <li>Contabilidade</li>
+                        <li>Direito</li>
+                        <li>Fiscal</li>
+                        <li>Tecnologia da Informação</li>
+                    </ul>
+                </div>
+                <div class="subject-stock" data-aos="zoom-in-up" data-aos-duration="1700">
+                    <h3>Mercado de Capitais</h3>
+                    <ul><li>Mercado de Capitais</li></ul>
+                </div>
+            </div>
+        </div>
+        <div class="academias" id="academias-germinare">
+            <div class="academias-title">
+                <h1 data-aos="fade-up" style="font-weight: 800;">Academias Germinare</h1>
+            </div>
+            <div class="academias-subtitle" data-aos="fade-up" data-aos-duration="1500">
+                <p>A escola Germinare, por meio de um currículo inovador, proporciona o diploma de Técnico em Administração de Empresas ao concluir o Ensino Médio. Para isso, dividimos as disciplinas em <span style="font-weight: bolder;">áreas do conhecimento</span>, as Academias Germinare!</p>
+            </div>
+            <div class="banner-academias">
+
+                <div class="banner-friboi" data-aos="fade-right" data-aos-duration="1500">
+                    <img src="../imgs/img-academico/academias/Friboi/friboi-logo.png" alt="Logo Friboi" width="50px" class="logo-friboi">
+                    <div class="text-banner-friboi">
+                        <h1>Academia Friboi</h1>
+                        <p>A Academia de Commodities esclarece diversos tipos de metodologias diferentes para a solução de problemas. Dessa forma, ela aproxima o dia a dia das operações frigoríficas e dos Centros de Distribuição (CD´s) para gerar mais conhecimento e bagagem profissional nas variadas áreas de forma consistente e acelerada.</p>
+                    </div>
+                    <div class="button-teacher" onclick="friboiProfessores(this)">
+                        <h4 class="equipe-de-professores">Equipe de<br>Professores</h4>
+                        <img src="../imgs/img-academico/arrow-down.svg" alt="Seta" width="10px" height="8px" class="arrow">
+                    </div>
+                </div>
+                
+                <div id="friboi" class="teacher-grid">
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Friboi/teachers/João Audi.png" alt="João Audi">
+                        <h1>João Audi</h1>
+                        <p>Diretor da academia</p>
+                    </div>
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Friboi/teachers/Robson.png" alt="Robson Pereira">
+                        <h1>Robson Pereira</h1>
+                        <p>Gerente da Academia</p>
+                    </div>
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Friboi/teachers/Alcadi.png" alt="Alcadi Faria">
+                        <h1>Adalci Faria</h1>
+                        <p>Professor de Campo</p>
+                    </div>
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Friboi/teachers/Marcia.png" alt="Márcia Santos">
+                        <h1>Márcia dos Santos</h1>
+                        <p>Professora de Campo</p>
+                    </div>
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Friboi/teachers/Rafael.png" alt="Rafael Stedler">
+                        <h1>Rafael Stedler</h1>
+                        <p>Professor de Operações</p>
+                    </div>
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Friboi/teachers/Ana Maria.png" alt="Ana Santos">
+                        <h1>Ana Santos</h1>
+                        <p>Professora de Operações</p>
+                    </div>
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Friboi/teachers/Silvia.png" alt="Silvia Camoiço">
+                        <h1>Silvia Camoiço</h1>
+                        <p>Professora de Operações</p>
+                    </div>
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Friboi/teachers/Nídia.png" alt="Nídia Person">
+                        <h1>Nídia Person</h1>
+                        <p>Professora de Ciências</p>
+                    </div>
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Friboi/teachers/Sonia.png" alt="Sônia Fonseca">
+                        <h1>Sônia Fonseca</h1>
+                        <p>Professora de Ciências</p>
+                    </div>
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Friboi/teachers/Domingos.png" alt="Alexandre Botte">
+                        <h1>Alexandre Botte</h1>
+                        <p>Professor de Biologia</p>
+                    </div>
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Friboi/teachers/Raissa.png" alt="Raíssa Marques">
+                        <h1>Raíssa Marques</h1>
+                        <p>Professora de Química</p>
+                    </div>
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Friboi/teachers/Ely.png" alt="Ely Dirani">
+                        <h1>Ely Dirani</h1>
+                        <p>Professor de Física</p>
+                    </div>
+                </div>
+
+                <div class="banner-seara" data-aos="fade-left" data-aos-duration="1500">
+                    <img src="../imgs/img-academico/academias/Seara/seara-logo.png" alt="Logo Seara" width="50px" class="logo-friboi">
+                    <div class="text-banner-friboi">
+                        <h1>Academia Seara</h1>
+                        <p>A Academia de Bens de Consumo, por meio da Metodologia de Casos de Ensino, trabalha o desafio do negócio para aprendizagem sobre a complexidade organizacional. Com execuções práticas, agrega situações reais e conhecimento sobre as marcas, sobre as áreas do comercial,  marketing, produto e Supply Chain.</p>
+                    </div>
+                    <div class="button-teacher"  onclick="searaProfessores(this)">
+                        <h4 class="equipe-de-professores">Equipe de<br>Professores</h4>
+                        <img src="../imgs/img-academico/arrow-down.svg" alt="Seta" width="10px" height="8px" class="arrow-seara">
+                    </div>
+                </div>
+                <div id="seara" class="teacher-grid">
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Seara/Teachers/Rodrigo Motta.png" alt="Rodrigo Motta">
+                        <h1>Rodrigo Motta</h1>
+                        <p>Diretor da Academia</p>
+                    </div>
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Seara/Teachers/Thais.png" alt="Thaís Lima">
+                        <h1>Thaís Lima</h1>
+                        <p>Gerente da Academia</p>
+                    </div>
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Seara/Teachers/Renato.png" alt="Renato Pajares">
+                        <h1>Renato Pajares</h1>
+                        <p>Professor de Negócios</p>
+                    </div>
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Seara/Teachers/Camilla.png" alt="Camilla Rocha">
+                        <h1>Camilla Rocha</h1>
+                        <p>Professora de Negócios</p>
+                    </div>
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Seara/Teachers/Manoel.png" alt="Manoel Machado">
+                        <h1>Manoel Machado</h1>
+                        <p>Professor de Negócios</p>
+                    </div>
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Seara/Teachers/Sidney.png" alt="Sidney Mendes">
+                        <h1>Sidney Mendes</h1>
+                        <p>Professor de Negócios</p>
+                    </div>
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Seara/Teachers/Andrea.png" alt="Andrea Antonacci">
+                        <h1>Andrea Antonacci</h1>
+                        <p>Professora de Negócios</p>
+                    </div>
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Seara/Teachers/Cleuton.png" alt="Cleuton Vieira">
+                        <h1>Cleuton Vieira</h1>
+                        <p>Professor de História</p>
+                    </div>
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Seara/Teachers/Francini.png" alt="Francini Thomaz">
+                        <h1>Francini Thomaz</h1>
+                        <p>Professora de Geografia</p>
+                    </div>
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Seara/Teachers/Priscila.png" alt="Priscila Carmo">
+                        <h1>Priscila Carmo</h1>
+                        <p>Professora de Negócios</p>
+                    </div>
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Seara/Teachers/Bruna.png" alt="Bruna Cordeiro">
+                        <h1>Bruna Cordeiro</h1>
+                        <p>Professora de Negócios</p>
+                    </div>
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Seara/Teachers/Katia.png" alt="Katia Kalil">
+                        <h1>Katia Kalil</h1>
+                        <p>Professora de Geografia</p>
+                    </div>
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Seara/Teachers/Maria.png" alt="Maria Antônia Martins">
+                        <h1>Maria Martins</h1>
+                        <p>Professora de Sociologia</p>
+                    </div>
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Seara/Teachers/Andre.png" alt="André Clarizia">
+                        <h1>André Clarizia</h1>
+                        <p>Professor de Negócios</p>
+                    </div>
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Seara/Teachers/Iziney.png" alt="Iziney Teixeira">
+                        <h1>Iziney Teixeira</h1>
+                        <p>Professor de Campo</p>
+                    </div>
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Seara/Teachers/Ricardo.png" alt="Ricardo José Costa">
+                        <h1>Ricardo José Costa</h1>
+                        <p>Professor de Campo</p>
+                    </div>
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Seara/Teachers/Fabio.png" alt="Fabio Gomes">
+                        <h1>Fábio Gomes</h1>
+                        <p>Professor de Campo</p>
+                    </div>
+                </div>
+
+
+                <div class="banner-swift" data-aos="fade-right" data-aos-duration="1500">
+                    <img src="../imgs/img-academico/academias/Swift/swift-logo.png" alt="Logo Swift" width="50px" class="logo-swift">
+                    <div class="text-banner-friboi">
+                        <h1>Academia Swift</h1>
+                        <p>A Academia de Serviços fornece um conteúdo focado em Gestão de Negócios no varejo com ênfase em conhecimento de produto, gestão de pessoas, atendimento superlativo, vendas, expansão, sustentabilidade e transformação digital. Assim, os alunos possuem uma visão prática e muito próxima à realidade do negócio.</p>
+                    </div>
+                    <div class="button-teacher" onclick="swiftProfessores(this)">
+                        <h4 class="equipe-de-professores">Equipe de<br>Professores</h4>
+                        <img src="../imgs/img-academico/arrow-down.svg" alt="Seta" width="10px" height="8px" class="arrow-swift">
+                    </div>
+                </div>
+                <div id="swift" class="teacher-grid">
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Swift/Teachers/Paulo.png" alt="Paulo Gualtieri">
+                        <h1>Paulo Gualtieri</h1>
+                        <p>Diretor da Academia</p>
+                    </div>
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Swift/Teachers/Kihara.png" alt="Kihara Bueno">
+                        <h1>Kihara Bueno</h1>
+                        <p>Assistente Administrativo</p>
+                    </div>
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Swift/Teachers/Ed Carlos.png" alt="Ed Carlos">
+                        <h1>Ed Carlos Holanda</h1>
+                        <p>Gerente da Academia</p>
+                    </div>
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Swift/Teachers/Roberto.png" alt="Roberto Nascimento">
+                        <h1>Roberto Nascimento</h1>
+                        <p>Professor de Varejo</p>
+                    </div>
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Swift/Teachers/Priscila.png" alt="Priscila Marques">
+                        <h1>Priscila Marques</h1>
+                        <p>Professora de Varejo</p>
+                    </div>
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Swift/Teachers/Ieda.png" alt="Iêda Sasaki">
+                        <h1>Iêda Sasaki</h1>
+                        <p>Professora de Varejo</p>
+                    </div>
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Swift/Teachers/Marcia.png" alt="Marcia Ovalle">
+                        <h1>Marcia Ovalle</h1>
+                        <p>Professora de Gestão de Pessoas</p>
+                    </div>
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Swift/Teachers/Rose.png" alt="Rose Bravo">
+                        <h1>Rose Bravo</h1>
+                        <p>Professora de Gestão de Pessoas</p>
+                    </div>
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Swift/Teachers/Ana.png" alt="Ana Fernandes">
+                        <h1>Ana Fernandes</h1>
+                        <p>Professora de Gestão de Pessoas</p>
+                    </div>
+                </div>
+
+                <div class="banner-original" data-aos="fade-left" data-aos-duration="1500">
+                    <img src="../imgs/img-academico/academias/Original/original-logo.png" alt="Logo Original" width="60px" class="logo-digital">
+                    <div class="text-banner-friboi">
+                        <h1>Academia Original</h1>
+                        <p>Por meio de projetos multidisciplinares e constante contato com profissionais da área financeira, os alunos aprendem diversos conceitos econômicos, desenvolvem a capacidade de resolução de problemas com raciocínio lógico e adquirem conhecimento a respeito de produtos e serviços bancários e financeiros.</p>
+                    </div>
+                    <div class="button-teacher" onclick="originalProfessores(this)">
+                        <h4 class="equipe-de-professores">Equipe de<br>Professores</h4>
+                        <img src="../imgs/img-academico/arrow-down.svg" alt="Seta" width="10px" height="8px" class="arrow-original">
+                    </div>
+                </div>
+                <div id="original" class="teacher-grid">
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Original/Teachers/Gabriele.png" alt="Sérgio Gabriele">
+                        <h1>Sérgio Gabriele</h1>
+                        <p>Diretor da Academia</p>
+                    </div>
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Original/Teachers/Edu.png" alt="Eduardo Massao">
+                        <h1>Eduardo Massao</h1>
+                        <p>Professor de Matemática</p>
+                    </div>
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Original/Teachers/Luis.png" alt="Luis Menezes">
+                        <h1>Luis Menezes</h1>
+                        <p>Professor de Estatística</p>
+                    </div>
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Original/Teachers/Gobe.png" alt="Antonio Gobe">
+                        <h1>Antônio Gobe</h1>
+                        <p>Professor de Economia</p>
+                    </div>
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Original/Teachers/Lilian.png" alt="Lilian Kamia">
+                        <h1>Lilian Kamia</h1>
+                        <p>Professora de Matemática</p>
+                    </div>
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Original/Teachers/Marcos.png" alt="Marcos Conrado">
+                        <h1>Marcos Conrado</h1>
+                        <p>Professor de Matemática</p>
+                    </div>
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Original/Teachers/Lisete.png" alt="Lisete Chiarelli">
+                        <h1>Lisete Chiarelli</h1>
+                        <p>Professora de Matemática</p>
+                    </div>
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Original/Teachers/Manfred.png" alt="Manfred Back">
+                        <h1>Manfred Back</h1>
+                        <p>Professor de Mercado de Capitais</p>
+                    </div>
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Original/Teachers/Tomita.png" alt="Maurício Tomita">
+                        <h1>Maurício Tomita</h1>
+                        <p>Professor de Matemática</p>
+                    </div>
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Original/Teachers/José.png" alt="José Oliveira">
+                        <h1>José Oliveira</h1>
+                        <p>Professor de Banking</p>
+                    </div>
+                </div>
+
+
+                <div class="banner-picpay" data-aos="fade-right" data-aos-duration="1500">
+                    <img src="../imgs/img-academico/academias/Picpay/PicPay-Logo.png" alt="Logo Picpay" width="50px" class="logo-picpay">
+                    <div class="text-banner-friboi">
+                        <h1>Academia PicPay</h1>
+                        <p>A Academia de Tecnologia foi desenvolvida para atender a demanda dos alunos e do mercado de trabalho atual. Durante as aulas, os estudantes aprendem sobre tecnologias digitais e experiência do usuário, com foco no desenvolvimento e gestão de negócios.</p>
+                    </div>
+                    <div class="button-teacher" onclick="picpayProfessores(this)">
+                        <h4 class="equipe-de-professores">Equipe de<br>Professores</h4>
+                        <img src="../imgs/img-academico/arrow-down.svg" alt="Seta" width="10px" height="8px" class="arrow-picpay">
+                    </div>
+                </div>
+                <div id="picpay" class="teacher-grid">
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Picpay/Teachers/Raul.png" alt="Raul Moreira">
+                        <h1>Raul Moreira</h1>
+                        <p>Diretor da Academia</p>
+                    </div>
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Picpay/Teachers/Annibal.png" alt="Annibal Filho">
+                        <h1>Annibal Filho</h1>
+                        <p>Gerente da Academia</p>
+                    </div>
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Picpay/Teachers/Wesley.png" alt="Wesley Mendonça">
+                        <h1>Wesley Mendonça</h1>
+                        <p>Gerente da Academia</p>
+                    </div>
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Picpay/Teachers/Ricardo.png" alt="Ricardo Araujo">
+                        <h1>Ricardo Araujo</h1>
+                        <p>Professor de Fiscal</p>
+                    </div>
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Picpay/Teachers/Giroto.png" alt="Carlos Giroto">
+                        <h1>Carlos Giroto</h1>
+                        <p>Professor de Tecnologia</p>
+                    </div>
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Picpay/Teachers/Victor.png" alt="Victor Gil Neto">
+                        <h1>Victor Gil Neto</h1>
+                        <p>Professor de Tecnologia</p>
+                    </div>
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Picpay/Teachers/Bruno.png" alt="Bruno Baptista">
+                        <h1>Bruno Baptista</h1>
+                        <p>Professor de Tecnologia</p>
+                    </div>
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Picpay/Teachers/Wander.png" alt="Wander Gomes">
+                        <h1>Wander Gomes</h1>
+                        <p>Professor de Direito</p>
+                    </div>
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Picpay/Teachers/Marcio.png" alt="Márcio Caetano">
+                        <h1>Márcio Caetano</h1>
+                        <p>Professor de Informática</p>
+                    </div>
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Picpay/Teachers/Francisco.png" alt="Francisco da Silva">
+                        <h1>Francisco da Silva</h1>
+                        <p>Professor de Contabilidade</p>
+                    </div>
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Picpay/Teachers/Carla.png" alt="Carla Gomes">
+                        <h1>Carla Gomes</h1>
+                        <p>Professora de Inglês</p>
+                    </div>
+                </div>
+
+                <div class="banner-germinare" data-aos="fade-left" data-aos-duration="1500">
+                    <img src="../imgs/img-academico/academias/Germinare/germinare-logo.png" alt="Logo Germinare" width="40px" class="logo-swift">
+                    <div class="text-banner-friboi">
+                        <h1>Academia Pedagógica</h1>
+                        <p>A equipe pedagógica é responsável por propiciar aos alunos uma jornada de formação acadêmica e profissional. Essa equipe garante a confluência de todas as academias, pois zela por todas as outras dimensões educacionais que atravessam a formação dos nossos alunos.</p>
+                    </div>
+                    <div class="button-teacher" onclick="germinareProfessores(this)">
+                        <h4 class="equipe-de-professores">Equipe de<br>Professores</h4>
+                        <img src="../imgs/img-academico/arrow-down.svg" alt="Seta" width="10px" height="8px" class="arrow-germinare">
+                    </div>
+                </div>
+                <div id="germinare" class="teacher-grid">
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Germinare/Teachers/Maria Odete.png" alt="Maria Odete Perrone">
+                        <h1>Maria Odete Perrone</h1>
+                        <p>Diretora Pedagógica</p>
+                    </div>
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Germinare/Teachers/Cinthia.png" alt="Cintia Moura">
+                        <h1>Cintia Moura</h1>
+                        <p>Coordenadora Pedagógica</p>
+                    </div>
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Germinare/Teachers/Cris.png" alt="Maria Cristina Haddad">
+                        <h1>Maria Cristina Haddad</h1>
+                        <p>Psicóloga Escolar</p>
+                    </div>
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Germinare/Teachers/Nathaly.png" alt="Nathaly Araujo">
+                        <h1>Nathaly Araujo</h1>
+                        <p>Psicóloga Escolar</p>
+                    </div>
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Germinare/Teachers/Laisa.png" alt="Laisa de Andrade">
+                        <h1>Laisa de Andrade</h1>
+                        <p>Auxiliar Docente</p>
+                    </div>
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Germinare/Teachers/Karina.png" alt="Karina Souza">
+                        <h1>Karina Souza</h1>
+                        <p>Supervisora Pedagógica</p>
+                    </div>
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Germinare/Teachers/Fernanda.png" alt="Fernanda Godoy">
+                        <h1>Fernanda Godoy</h1>
+                        <p>Monitora de Alunos</p>
+                    </div>
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Germinare/Teachers/Rani.png" alt="Rani Cavalcante">
+                        <h1>Rani Cavalcante</h1>
+                        <p>Monitora de Alunos</p>
+                    </div>
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Germinare/Teachers/Brena.png" alt="Brenda Emmendorfer">
+                        <h1>Brenda Emmendorfer</h1>
+                        <p>Monitora de Alunos</p>
+                    </div>
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Germinare/Teachers/Ricardo.png" alt="Ricardo Menezes">
+                        <h1>Ricardo Menezes</h1>
+                        <p>Professor de Condicionamento Físico</p>
+                    </div>
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Germinare/Teachers/Marina.png" alt="Marina Utida">
+                        <h1>Marina Utida</h1>
+                        <p>Professora de Português</p>
+                    </div>
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Germinare/Teachers/Rosangela.png" alt="Rosângela Moraes">
+                        <h1>Rosângela Moraes</h1>
+                        <p>Professora de Português</p>
+                    </div>
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Germinare/Teachers/Denise.png" alt="Denise Murasaki">
+                        <h1>Denise Murasaki</h1>
+                        <p>Professora de Português</p>
+                    </div>
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Germinare/Teachers/Helo.png" alt="Heloísa Velanga">
+                        <h1>Heloísa Velanga</h1>
+                        <p>Professora de Inglês</p>
+                    </div>
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Germinare/Teachers/Leda.png" alt="Leda Vieira">
+                        <h1>Leda Vieira</h1>
+                        <p>Professora de Inglês</p>
+                    </div>
+                    <div class="teacher-profile">
+                        <img src="../imgs/img-academico/academias/Germinare/Teachers/Lucas.png" alt="Lucas Candido">
+                        <h1>Lucas Candido</h1>
+                        <p>Professora de Condicionamento Físico</p>
+                    </div>
+                </div>
+                <div class="projetos-germinare">
+                    <h1 data-aos="fade-right" id="projetos-germinare">Projetos <br>Germinare</span></h1>
+                    <p data-aos="fade-left" data-aos-duration="1500">Os projetos escolares propostos pelas disciplinas e academias da Escola Germinare possuem como principal objetivo unir a teoria aprendida em aula e a prática vivenciada nos negócios. Assim, nossos alunos são desafiados pelos professores com dinâmicas e atividades criativas para fixação de conteúdo.</p>
+                </div>
+                <div class="projetos-all">
+                    <div class="projeto-container" data-aos="fade-right">
+                        <div class="text-projeto-container">
+                            <h2 class="projeto-h2">Congresso de marcas</h2>
+                            <h4 class="projeto-h4">Academia Seara e Flora</h4>                                  
+                        </div>
+                        <p class="projeto-p">A Academia Seara e a área de Códigos e Linguagens elaboraram um projeto para validar a metodologia ativa de suas aulas, com o objetivo de divulgar os trabalhos realizados sobre os negócios parceiros. O evento foi realizado nos dias 19 e 20 de novembro, apresentando as propostas dos alunos aos desafios do caso de ensino da Academia Seara.</p>
+                        <!-- <button>Ver fotos</button> -->
+                    </div>
+                    <div class="projeto-container" data-aos="fade-right">
+                        <div class="text-projeto-container">
+                            <h2 class="projeto-h2">Banco Digital</h2>
+                            <h4 class="projeto-h4">Academia Original</h4> 
+                        </div>
+                        <p class="projeto-p">Em parceria a Academia Original, os alunos do 7° ano foram desafiados a construir um Banco Digital. Durante o projeto tiveram que desenvolver o público-alvo, os produtos e serviços bancários, além da criação de estratégias de atendimento ao cliente, marketing, plataformas digitais e a organização contábil das suas instituições.</p>
+                        <!-- <button>Ver fotos</button> -->
+                    </div>
+                    <div class="projeto-container" data-aos="fade-right">
+                        <div class="text-projeto-container">
+                            <h2 class="projeto-h2">Experiência Culinária</h2>
+                            <h4 class="projeto-h4">Academia Swift</h4> 
+                        </div>
+                        <p class="projeto-p">Com apoio da Academia Swift, todos os alunos do 9º ano tiveram experiências práticas de culinária na loja de Alphaville. Através de vivências e desafios na cozinha, os estudantes conseguiram obter mais conhecimento sobre os produtos e aprender novas técnicas para o preparo dos alimentos comercializados pela marca em suas lojas.</p>
+                        <!-- <button>Ver fotos</button> -->
+                    </div>
+                    <div class="projeto-container" data-aos="fade-left">
+                        <div class="text-projeto-container">
+                            <h2 class="projeto-h2">Audiência Simulada</h2>
+                            <h4 class="projeto-h4">Direito</h4> 
+                        </div>
+                        <p class="projeto-p">Nas aulas da disciplina de direito, os alunos do 9º ano foram desafiados a simular uma audiência judicial, com juízes, advogados, testemunhas e peritos, colocando em prática os conhecimentos adquiridos sobre a matéria. Assim, cada sala teve que julgar um caso sobre vício/ fato de um objeto, explorando os artigos do Código de Defesa do Consumidor.</p>
+                        <!-- <button>Ver fotos</button> -->
+                    </div>
+                    <div class="projeto-container" data-aos="fade-left">
+                        <div class="text-projeto-container">
+                            <h2 class="projeto-h2">Site Germinare</h2>
+                            <h4 class="projeto-h4">Academia PicPay</h4>  
+                        </div>
+                        <p class="projeto-p">A Academia PicPay propôs aos alunos do 1º ano do Ensino Médio o desafio de criação de um site para a Escola Germinare através do framework Scrum. A ideia baseia-se na releitura da plataforma atual e formação de um novo protótipo, adaptando o design, aprimorando as funcionalidades e filtrando todas as informações disponibilizadas.</p>
+                        <!-- <button>Ver fotos</button> -->
+                    </div>
+                    <div class="projeto-container" data-aos="fade-left">
+                        <div class="text-projeto-container">
+                            <h2 class="projeto-h2">Análise do DRE</h2>
+                            <h4 class="projeto-h4">Academia Friboi</h4>  
+                        </div>
+                        <p class="projeto-p">A Academia Friboi incentivou o aprendizado na prática aos alunos do 1º ano do Ensino Médio, através da análise de um Demonstrativo do Resultado do Exercício (DRE) de um centro de distribuição. Os estudantes tiveram que entender as contas do relatório e desenvolver um plano de melhoria contínua para futuros períodos, com projeções, justificativas e estatísticas.</p>
+                        <!-- <button>Ver fotos</button> -->
+                    </div>    
+                </div>
+
+                <div id="page">
+                    <div class="row">
+                        <div class="column small-11 small-centered" id="carousel">
+                            <div class="slider slider-single">
+                                <div><img class="full-img" src="../imgs/galeria-imgs/congresso1.jpeg" alt="Congresso de Marcas"></div>
+                                <div><img class="full-img" src="../imgs/galeria-imgs/congresso2.jpeg" alt="Congresso de Marcas"></div>
+                                <div><img class="full-img" src="../imgs/galeria-imgs/congresso3.jpeg" alt="Congresso de Marcas"></div>
+                                <div><img class="full-img" src="../imgs/galeria-imgs/original-1.jpg" alt="Banco Digital"></div>
+                                <div><img class="full-img" src="../imgs/galeria-imgs/direito1.jpg" alt="Audiencia Simulada"></div>
+                                <div><img class="full-img" src="../imgs/galeria-imgs/direito2.jpg" alt="Audiencia Simulada"></div>
+                                <div><img class="full-img" src="../imgs/galeria-imgs/direito3.jpg" alt="Audiencia Simulada"></div>
+                                <div><img class="full-img" src="../imgs/galeria-imgs/direito4.jpeg" alt="Audiencia Simulada"></div>
+                                <div><img class="full-img" src="../imgs/galeria-imgs/expswift1.jpeg" alt="Experiência Swift"></div>
+                                <div><img class="full-img" src="../imgs/galeria-imgs/expswift2.jpeg" alt="Experiência Swift"></div>
+                                <div><img class="full-img" src="../imgs/galeria-imgs/expswift3.jpeg" alt="Experiência Swift"></div>
+                                <div><img class="full-img" src="../imgs/galeria-imgs/picpay1.jpeg" alt="PicPay"></div>
+                                <div><img class="full-img" src="../imgs/galeria-imgs/picpay2.jpeg" alt="PicPay"></div>
+                                <div><img class="full-img" src="../imgs/galeria-imgs/picpay3.jpeg" alt="PicPay"></div>
+                            </div>
+                            <div class="slider slider-nav">
+                                <div><span><img class="span-img" src="../imgs/galeria-imgs/congresso1.jpeg" alt="Congresso de Marcas"></span></div>
+                                <div><span><img class="span-img" src="../imgs/galeria-imgs/congresso2.jpeg" alt="Congresso de Marcas"></span></div>
+                                <div><span><img class="span-img" src="../imgs/galeria-imgs/congresso3.jpeg" alt="Congresso de Marcas"></span></div>
+                                <div><span><img class="span-img" src="../imgs/galeria-imgs/original-1.jpg" alt="Banco Digital"></span></div>
+                                <div><span><img class="span-img" src="../imgs/galeria-imgs/direito1.jpg" alt="Audiencia Simulada"></span></div>
+                                <div><span><img class="span-img" src="../imgs/galeria-imgs/direito2.jpg" alt="Audiencia Simulada"></span></div>
+                                <div><span><img class="span-img" src="../imgs/galeria-imgs/direito3.jpg" alt="Audiencia Simulada"></span></div>
+                                <div><span><img class="span-img" src="../imgs/galeria-imgs/direito4.jpeg" alt="Audiencia Simulada"></span></div>
+                                <div><span><img class="span-img" src="../imgs/galeria-imgs/expswift1.jpeg" alt="Experiência Swift"></span></div>
+                                <div><span><img class="span-img" src="../imgs/galeria-imgs/expswift2.jpeg" alt="Experiência Swift"></span></div>
+                                <div><span><img class="span-img" src="../imgs/galeria-imgs/expswift3.jpeg" alt="Experiência Swift"></span></div>
+                                <div><span><img class="span-img" src="../imgs/galeria-imgs/picpay1.jpeg" alt="Experiência Swift"></span></div>
+                                <div><span><img class="span-img" src="../imgs/galeria-imgs/picpay2.jpeg" alt="Experiência Swift"></span></div>
+                                <div><span><img class="span-img" src="../imgs/galeria-imgs/picpay3.jpeg" alt="Experiência Swift"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--SLICK-->
+                <script src='https://code.jquery.com/jquery-1.11.0.min.js'></script>
+                <script src='https://code.jquery.com/jquery-migrate-1.2.1.min.js'></script>
+                <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js'></script><script  src="./main-carousel.js"></script>
+                <!--SLICK-->
+                <script src="../scripts/main-galeria.js"></script>            
+    </main>
+
+    <footer id="footer">
+        <div id ="social">
+            <a href="https://www.instagram.com/escolagerminare/"target="_blank"><img src="../imgs/img-academico/footer/Instagram.png" alt="logo do instagram" class ="logo"></a>
+            <a href="https://www.youtube.com/channel/UCtfT0wIFhW2jyCMR0ZtBuzg"target="_blank"><img src="../imgs/img-academico/footer/YouTube.png" alt="logo do youtube" class ="logo"></a>
+            <a href="https://www.linkedin.com/company/instituto-germinare/?trk=top_nav_home"target="_blank"><img src="../imgs/img-academico/footer/Linkedin.png" alt="logo do linkedin" class ="logo"></a>
+            <a href="https://www.facebook.com/germinareoficial" target="_blank"><img src="../imgs/img-academico/footer/Facebook.png" alt="logo do facebook" class ="logo"></a>
+        </div>
+        <div id ="contact">
+            <p>R. Irineu José Bordon - Vila Jaguara, São Paulo - SP, 05120-060</p>
+            <p>Telefone: (11) 3623-6000 </p>
+            <p>Escola Germinare – Escola de Negócios © 2021</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

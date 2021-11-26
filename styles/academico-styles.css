@@ -1,0 +1,1223 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/*MAIN*/
+
+body{
+    background-color: #1F1F1F;
+    font-family: 'Montserrat', sans-serif;
+    color: #FFFFFF;
+}
+
+/*BANNER*/
+.banner {
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../imgs/img-academico/pt1/Francini\ Thomaz\ 1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    min-height: 170px;
+
+}
+
+.banner-text {
+    transform: translateY(20%);
+    margin-left: 10px;
+}
+
+.banner-text > h1, h2 {
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.banner-text > p {
+    margin-top: 7px;
+}
+
+.logo-germinare {
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.scroll-arrow {
+    display: none;
+}
+
+/*ACADEMICO*/
+.container-academico {
+    margin-top: 40px;
+    margin-left: 10px;
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.projeto-academico-title {
+    text-transform: uppercase;
+}
+
+#alunos-projeto-academico {
+    float: right;
+    opacity: 30%;
+    position: relative;
+}
+
+.acad-orange {
+    color: #7174ff;
+}
+
+.tecnica-orange {
+    color: #7174ff;
+}
+
+.academico-right {
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../imgs/img-academico/projeto/projeto-academico.png);
+    background-size: cover;
+    min-width: 140px;
+    min-height: 150px;
+    float: right;
+    margin-right: 10px;
+}
+
+.academico-right > img {
+    margin-top: 5px;    
+}
+
+.academico-right> h2 {
+    transform: translateY(300%);
+    margin-right: 5px;
+}
+
+.academico-left {
+    float: left;
+    text-align: right;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.academico-left > h1 {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.academico-left > h1:after {
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid #7174ff;
+    width: 90px;
+    right:-30px;
+    bottom:0;
+    top: 20px;
+}
+
+.academico-left > p {
+    padding-top: 5px;
+}
+
+
+/*SUBJECTS*/
+.subjects {
+    margin-top: 40px;
+    font-size: 10px;
+}
+
+.container-subjects {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(2, 120px);
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.subject-title > h1 {
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+
+.subject-title {
+    display: block;
+    flex-direction: row;
+}
+
+.container-subjects > div {
+    width: 120px;
+    height: 200px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center center;
+    margin-top: 10px;
+    padding-top: 80%;
+}
+
+li {
+    font-size: 8px;
+}
+
+.container-subjects > div > h3 {
+    text-transform: uppercase;
+    padding-left: 10px;
+}
+
+.container-subjects > div > ul {
+    padding-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.subject-language {
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../imgs/img-academico/subjects/languagee.jpg);
+}
+
+.subject-math {
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../imgs/img-academico/subjects/maths.jpg);
+    margin-left: 10px;
+}
+
+.subject-nature {
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../imgs/img-academico/subjects/natur.png);
+}
+
+.subject-human {
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../imgs/img-academico/subjects/humann.jpg);
+    margin-left: 10px;
+}
+
+.subject-control {
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../imgs/img-academico/subjects/controladoria.jpg);
+}
+
+.subject-control > h3 {
+    font-size: 10px;
+}
+
+.subject-stock {
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../imgs/img-academico/subjects/stock.png);
+    margin-left: 10px;
+}
+
+/*ACADEMIAS*/
+.academias-subtitle > p {
+    font-size: 7px;
+    margin: 20px 10px;
+}
+
+.banner-friboi {
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../imgs/img-academico/academias/Friboi/friboi-banner.jpg);
+    background-size: cover;
+    background-position: center center;
+    margin: 10px;
+    margin-bottom: 5px;
+    height: 120px;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+.text-banner-friboi > h1 {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.text-banner-friboi {
+    transform: translateY(0%);
+    margin: 10px;
+}
+
+.logo-friboi {
+    float: right;
+    margin-right: 10px;
+}
+
+.button-teacher > h4 {
+    text-transform: uppercase;
+    font-size: 6px;
+    font-weight: 400;
+}
+
+.button-teacher {
+    display: flex;
+    float: right;
+    transform: translateY(0%);
+    margin-right: 10px;
+}
+
+.button-teacher > img {
+    cursor: pointer;
+}
+
+.arrow {
+    transform: translateY(0%);
+    margin-left: 5px;
+    transition: transform 0.2s ease-in-out;
+    position: relative;
+    margin-top: 5px;
+}
+
+.arrow-seara {
+    transform: translateY(0%);
+    margin-left: 5px;
+    transition: transform 0.2s ease-in-out;
+    position: relative;
+    margin-top: 5px;
+}
+
+.arrow-swift {
+    transform: translateY(0%);
+    margin-left: 5px;
+    transition: transform 0.2s ease-in-out;
+    position: relative;
+    margin-top: 5px;
+}
+
+.arrow-original {
+    transform: translateY(0%);
+    margin-left: 5px;
+    transition: transform 0.2s ease-in-out;
+    margin-top: 5px;    
+}
+
+.arrow-picpay {
+    transform: translateY(0%);
+    margin-left: 5px;
+    transition: transform 0.2s ease-in-out;
+    position: relative;
+    margin-top: 5px;
+}
+
+.arrow-germinare {
+    transform: translateY(0%);
+    margin-left: 5px;
+    transition: transform 0.2s ease-in-out;
+    position: relative;
+    margin-top: 5px;
+}
+
+.equipe-de-professores{
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#friboi { 
+    display: none;
+} /*ISSO*/
+
+
+.teacher-profile > img {
+    transform: translateX(130%);
+    width:25px;
+    height: 25px;
+    margin-top: 5%;
+}
+
+.teacher-profile > H1 {
+    font-size: 7px;
+    color: #1F1F1F;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.teacher-profile > p {
+    font-size: 5px;
+    color: #1F1F1F;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/*OUTRAS EMPRESAS*/
+.banner-seara {
+    background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url(../imgs/img-academico/academias/Seara/seara-banner.png);
+    background-size: cover;
+    background-position: center center;
+    margin: 10px;
+    margin-bottom: 5px;
+    height: 120px;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+#seara { 
+    display: none;
+} /*ISSO*/
+
+.banner-swift {
+    background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url(../imgs/img-academico/academias/Swift/swift-banner.jpeg);
+    background-size: cover;
+    background-position: center center;
+    margin: 10px;
+    margin-bottom: 5px;
+    height: 120px;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+.logo-swift,.logo-digital, .logo-picpay {
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.teacher-grid {
+    background-color: #9A9A9A;
+    margin: 10px 10px;
+    height: auto;
+    padding: 10px;
+    padding-bottom: 3%;
+    border-radius: 10px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(3, 90px);
+    grid-template-rows: auto;
+    animation: fadeIn linear 0.2s;
+    -webkit-animation: fadeIn linear 0.2s;
+    -moz-animation: fadeIn linear 0.2s;
+    -o-animation: fadeIn linear 0.2s;
+    -ms-animation: fadeIn linear 0.2s;
+} /*ISSO*/
+
+#swift { 
+    display: none;
+} /*ISSO*/
+
+
+.banner-original {
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../imgs/img-academico/academias/Original/original-banner.jpeg);
+    background-size: cover;
+    background-position: center center;
+    margin: 10px;
+    margin-bottom: 5px;
+    height: 120px;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+#original { 
+    display: none;
+} /*ISSO*/
+
+
+.banner-picpay {
+    background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url(../imgs/img-academico/academias/Picpay/picpay-banner.jpg);
+    background-size: cover;
+    background-position: center center;
+    margin: 10px;
+    margin-bottom: 5px;
+    height: 120px;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+#picpay { 
+    display: none;
+} /*ISSO*/
+
+.banner-germinare {
+    background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url(../imgs/img-academico/academias/Germinare/germinare-banner.jpg);
+    background-size: cover;
+    background-position: center center;
+    margin: 10px;
+    margin-bottom: 5px;
+    height: 120px;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+#germinare { 
+    display: none;
+} /*ISSO*/
+
+/*ANIMAÇÃO*/
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+.orange {
+    background: #EF6421;
+}
+
+#main {
+    margin-bottom: 100px;
+}
+
+#formação-tech {
+    font-weight: 800;
+}
+
+.gestao-e-base {
+    font-weight: 800;
+}
+
+
+/*MOBILE*/
+@media only screen and (max-width: 768px) {
+    #main {
+        margin-bottom: 50px;
+    }
+
+    .banner {
+        background-size: cover;
+        background-position: center center;
+        background-attachment: scroll;
+        height: 300px;
+    }
+    .logo-germinare {
+        display: none;
+    }
+    .banner-text > h1 {
+        font-size: 25px;
+        font-weight: 800;
+    }
+    .banner-text > h2 {
+        font-weight: 800;
+        font-size: 20px;
+    }
+    .banner-text > p {
+        font-size: 18px;
+        width: 80%;
+    }
+    .banner-text {
+        display: block;
+        margin-left: 20px;
+        padding-top: 55px;
+        transform: translateY(0%);
+    }
+    .academico-right {
+        display: none;
+    }
+    .academico-left {
+        text-align: left;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .academico-left > h1:after {
+        display: none;
+    }
+    .academico-left > h1 {
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+
+
+    .subjects {
+        margin-top: 40px;
+        font-size: 10px;
+        margin-bottom: 100px;
+        padding-bottom: 5px;
+        background-color:white;
+    }
+
+    .subject-title > img {
+        margin: 0;
+        width: 40px;
+    }
+
+    .subject-title > h1 {
+        color: white;
+    }
+
+    .gestao-e-base {
+        text-align: left;
+        margin-left: 20px;
+        margin-right: 20px;
+        font-weight: 800;
+    }
+
+    .subject-title {
+        display: block;
+        flex-direction: row;
+    }
+
+    .subject-title > p {
+        color: #1F1F1F;
+        width: 80%;
+        text-align: left;
+        display: block;
+        margin-left: 20px;
+        margin-top: 10px;
+        font-size: 18px;
+    }
+
+    .subject-title > .grade-de-materias {
+        padding-top: 40px;
+        font-weight: 700;
+        text-align: left;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .container-subjects {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .subject-title > h1 {
+        font-size: 20px;
+        margin-left: 20px;
+        color: #1F1F1F;
+        text-align: left;
+    }
+
+    .container-subjects > div {
+        width: 280px;
+        height: max-content;
+        margin-bottom: 0px;
+        padding-top: 30%;
+        margin-left: 0px;
+        padding-bottom: 20px;
+    }
+
+    li {
+        font-size: 18px;
+        list-style: circle;
+    }
+
+    .container-subjects > div > h3 {
+        padding-left: 20px;
+        font-size: 18px;
+    }
+
+    .container-subjects > div > ul {
+        padding-left: 40px;
+    }
+    
+    .subject-math {
+        margin-left: 0px;
+    }
+
+    .subject-human {
+        margin-left: 0px;
+    }
+
+    .subject-control > h3 {
+        font-size: 5px;
+    }
+    
+    .subject-stock {
+        margin-left: 0px;
+    }
+
+    .academias-title h1 {
+        text-align: center;
+        font-size: 20px;
+        text-transform: uppercase;
+        padding-top: -20px;
+    }
+
+    .subjects {
+        margin-bottom: 40px;
+    }
+
+    .academias-subtitle p {
+        font-size: 18px;
+        width: 90%;
+        text-align: center;
+        margin: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .banner-friboi, .banner-seara, .banner-swift, .banner-original, .banner-picpay, .banner-germinare {
+        height: max-content;
+        padding: 50px 20px;
+    }
+
+    .logo-germinare, .logo-friboi, .logo-picpay, .logo-swift, .logo-digital {
+        display: none;
+    }
+
+    .text-banner-friboi {
+        transform: translateY(0%);
+        max-width: 100%;
+    }
+
+    .button-teacher > h4{
+        display: none;
+    }
+
+    .arrow, .arrow-germinare, .arrow-original, .arrow-seara, .arrow-swift, .arrow-picpay {
+        background-color: white;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        transform: translateY(0%);
+    }
+
+    .teacher-grid {
+        grid-template-columns: repeat(2, 150px);
+    }
+
+    .teacher-profile > h1 {
+        font-size: 13px;
+    }
+
+    .teacher-profile > p {
+        font-size: 8px;
+    }
+    
+    .teacher-profile > img {
+        width: 40px;
+        height: 40px;
+        margin-top: 20px;
+        margin-left: 0px;
+        transform: translateX(130%);
+    }
+
+
+    .projetos-all {
+        display: block;
+        margin: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .projetos-germinare > h1 {
+        text-align: center;
+        padding-top: 70px;
+        padding-bottom: 20px;
+        font-size: 25px;
+        margin: auto;
+        width: 100%;
+        text-transform: uppercase;
+        padding-left: 0px;
+    }
+
+    .projetos-germinare > p {
+        width: 80%;
+        margin: auto;
+        font-weight: 500;
+        padding-right: 0px;
+        text-align: center;
+        padding-bottom: 70px;
+    }
+
+    .text-projeto-container {
+        width: 80%;
+        border-bottom: 2px solid #7174ff;
+        margin-bottom: 30px;
+        padding-top: 40px;
+        padding-bottom: 10px;
+        color: #7174ff;
+    }
+
+    .projeto-p {
+        width: 80%;
+    }
+
+    .projeto-container > button {
+        background: transparent;
+        border: 2px solid #7174ff;
+        border-radius: 10px;
+        color: #7174ff;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        padding: 2%;
+        padding-left: 3%;
+        padding-right: 3%;
+        margin-top: 20px;
+        font-size: 15px;
+        transition: all 0.4s ease-in-out;
+    }
+
+    .projeto-container > button:hover {
+        background: #7174ff;
+        color: white;
+        border: 2px solid #7174ff;
+    }
+
+    .projeto-h2 {
+        font-size: 18px;
+        margin-bottom: 5px;
+        background: #7174ff;
+        padding: 5px 10px 5px 10px;
+        border-radius: 10px;
+        color: #1F1F1F;
+        width: max-content;
+        margin-top: 30px;
+    }
+
+    .projeto-h4 {
+        font-size: 15px;
+    }
+
+    .projetos-germinare {
+        background-color: #7174ff;
+        margin-top: 100px;
+        color: #1F1F1F;
+        display: block;
+    }
+    .projeto-container {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+/*BANNER*/
+@media only screen and (min-width: 1024px) {
+    .banner {
+        height: 100vh;
+        border-bottom: none;
+    }
+    
+    .banner-text {
+        margin-left: 50px;
+    }
+    
+    .banner-text > h2 {
+        font-size: 55px;
+    }
+    
+    .banner-text > p {
+        margin-top: 7px;
+        width: 40%;
+        font-size: 25px;
+    }
+
+    main p {
+        font-size: 20px;
+    }
+    
+    .banner-text > h1 {
+        font-size: 50px;
+    }
+    
+    .logo-germinare {
+        width: 80px;
+        margin-top: 40px;
+        margin-right: 40px;
+    }   
+
+    .scroll-arrow {
+        display: block;
+        padding-top: 10px;
+        margin: auto;
+        margin-top: 50px;
+        cursor: pointer;
+        transform: translateY(50%);
+    }
+
+    /*ACADEMICO*/
+    .container-academico {
+        margin: 110px  50px ;
+        padding-bottom: 50px;
+    }
+
+    .academico-right {
+        min-width: 440px;
+        min-height: 450px;
+    }
+
+    .academico-right > img {
+        margin: 10px;    
+        width: 180px;
+    }
+
+    .academico-right> h2 {
+        transform: translateY(270%);
+        margin-right: 20px;
+        font-size: 35px;
+    }
+
+    .academico-left {
+        margin-right: 20px;
+        margin-top: 60px;
+        width: 60%;
+    }
+
+    .academico-left > h1 {
+        margin-bottom: 10px;
+        font-size: 40px;
+    }
+
+    .academico-left > h1:after {
+        border-bottom: 3px solid #7174ff;
+        width: 200px;
+        right:-50px;
+        top: 60px;
+    }
+
+    .academico-left > p {
+        padding-top: 40px;
+    }
+
+    /*SUBJECTS*/
+    .subjects {
+        margin-top: 40px;
+        font-size: 10px;
+        margin-bottom: 100px;
+        padding-bottom: 5px;
+        background-color:white;
+    }
+
+    .subject-title > img {
+        margin: 0;
+        width: 40px;
+    }
+
+    .subject-title > h1 {
+        color: white;
+        
+    }
+
+    .subject-title {
+        display: block;
+        flex-direction: row;
+    }
+
+    .subject-title > p {
+        color: #1F1F1F;
+        width: 60%;
+        text-align: center;
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    .subject-title > .grade-de-materias {
+        padding-top: 40px;
+        font-weight: 700;
+    }
+
+    .container-subjects {
+        grid-template-columns: repeat(3, 400px);
+        margin-bottom: 80px;
+        margin-top: 50px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .subject-title > h1 {
+        font-size: 35px;
+        margin-left: 10px;
+        color: #1F1F1F;
+        text-align: center;
+    }
+
+    .container-subjects > div {
+        width: 370px;
+        height: 400px;
+        margin-bottom: 30px;
+        padding-top: 20px;
+        margin-left: 25px;
+    }
+
+    li {
+        font-size: 20px;
+        list-style: circle;
+    }
+
+    .container-subjects > div > h3 {
+        padding-left: 20px;
+        font-size: 26px;
+    }
+
+    .container-subjects > div > ul {
+        padding-left: 40px;
+    }
+    
+    .subject-math {
+        margin-left: 0px;
+    }
+
+    
+    .subject-human {
+        margin-left: 0px;
+    }
+
+    .subject-control > h3 {
+        font-size: 10px;
+    }
+    
+    .subject-stock {
+        margin-left: 0px;
+    }
+
+    /*ACADEMIAS*/
+    #academias-germinare {
+        font-size: 35px;
+    }
+
+    .academias-subtitle > p{
+        font-size: 20px;
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 40px;
+    }
+    .banner-friboi, .banner-seara, .banner-seara, .banner-swift, .banner-original, .banner-picpay, .banner-germinare {
+        margin: 20px 100px;
+        height: 50vh;
+        border-radius: 10px;
+    }
+    
+    .text-banner-friboi > h1 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    
+    .text-banner-friboi {
+        margin: 20px;
+        width: 60%;
+        transform: translateY(50%);
+    }
+    
+    .logo-friboi, .logo-swift {
+        margin: 20px;
+        width: 100px;
+    }
+
+    .logo-picpay {
+        margin-right: 20px;
+        margin-top: 0px;
+        width: 130px;
+    }
+
+    .logo-digital {
+        margin-right: 20px;
+        margin-top: 30px;
+        width: 150px;
+    }
+    
+    .button-teacher > h4 {
+        font-size: 15px;
+        font-weight: 700;
+        color: #1F1F1F;
+    }
+    
+    .button-teacher {
+        padding-bottom: 0px;
+        margin-right: 20px;
+        background: white;
+        height: fit-content;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    
+    .button-teacher > img {
+        width: 30px;
+        height: 20px;
+    }
+    
+    .teacher-profile > img {
+        transform: translateX(70%);
+        margin-bottom: 10px;
+        width:100px;
+        height: 100px;
+    }
+    
+    .teacher-profile > H1 {
+        font-size: 18px;
+    }
+    
+    .teacher-profile > p {
+        font-size: 14px;
+    }
+    
+    .teacher-profile > img {
+        margin-top: 20%;
+    }
+    
+    .teacher-grid {
+        background-color: #9A9A9A;
+        margin: 30px;
+        padding: 10px;
+        padding-bottom: 5%;
+        grid-template-columns: repeat(3, 250px);
+        margin: 20px 100px;
+    } 
+
+    .academias-title {
+        text-transform: uppercase;
+        text-align: center;
+        margin: auto;
+        font-size: 35px;
+    }
+
+    .projetos-all {
+        display: grid;
+        grid-template-columns: repeat(3, 400px);
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .projetos-germinare > h1 {
+        text-align: center;
+        padding-top: 70px;
+        padding-bottom: 70px;
+        font-size: 35px;
+        margin: auto;
+        width: 10%;
+        text-transform: uppercase;
+        padding-left: 30px;
+    }
+
+    .projetos-germinare > p {
+        width: 50%;
+        margin: auto;
+        font-weight: 500;
+        padding-right: 30px;
+    }
+
+    .text-projeto-container {
+        width: 320px;
+        border-bottom: 2px solid #7174ff;
+        margin-bottom: 30px;
+        padding-top: 40px;
+        padding-bottom: 10px;
+        color: #7174ff;
+    }
+
+    .projeto-p {
+        width: 80%;
+    }
+
+    .projeto-container > button {
+        background: transparent;
+        border: 2px solid #7174ff;
+        border-radius: 10px;
+        color: #7174ff;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        padding: 2%;
+        padding-left: 3%;
+        padding-right: 3%;
+        margin-top: 20px;
+        font-size: 15px;
+        transition: all 0.4s ease-in-out;
+    }
+
+    .projeto-container > button:hover {
+        background: #7174ff;
+        color: white;
+        border: 2px solid #7174ff;
+    }
+
+    .projeto-h2 {
+        font-size: 22px;
+        margin-bottom: 5px;
+        background: #7174ff;
+        padding: 5px 10px 5px 10px;
+        border-radius: 10px;
+        color: #1F1F1F;
+        width: max-content;
+        margin-top: 30px;
+    }
+
+    .projeto-h4 {
+        font-size: 18px;
+    }
+
+    .projeto-container {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .projetos-germinare {
+        background-color: #7174ff;
+        margin-top: 100px;
+        color: #1F1F1F;
+        display: flex;
+    }
+
+
+    .js .slider-single > div:nth-child(1n+2) { display: none }
+
+    .js .slider-single.slick-initialized > div:nth-child(1n+2) { display: block }
+
+    .slider-single {
+        width: 57.3%;
+    }
+
+    
+    #page {
+        width: 100%;
+        margin: 50px 0 50px;
+    }
+
+    .row {
+        width: 100%;
+    }
+
+    .full-img {
+        width: 100%;
+    }
+
+    #carousel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .slider-nav h3::before {
+        content: "";
+        display: block;
+        padding-top: 75%;
+    }
+
+    #carousel img {
+        width: 100%;
+        height: 80%;    
+    }
+
+    .slider-nav h3 span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .slider-nav .slick-slide { cursor: pointer;}
+
+
+    .span-img {
+        opacity: 0.8;
+        background-color: black;
+        width: 100%;
+        height: 100%;
+    }
+
+    .slider-nav {
+        width: 57.3%;	
+    }
+
+}

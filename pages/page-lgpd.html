@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/header-style.css">
+    <link rel="stylesheet" href="../styles/footer-style.css">
+    <link rel="stylesheet" href="../styles/lgpd-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="../imgs/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <title>Proteção de dados</title>
+    <script src="../scripts/main-lgpd.js" defer></script>
+    <script src="../scripts/main-header.js" defer></script>
+</head>
+<body>
+    <header>
+        <header id ="header">
+            <div class="mobile-container">
+            <div class="topnav">
+                <a href="page-inicial.html" class="active"><img id="logo" src="../imgs/img-contato/assets/logo.png"
+                        alt="logo da germinare em tema branco"></a>
+                <div id="myLinks">
+                    <a class="text" href="javascript:void(0)" onclick="abrirCardsFi(this)">admissão</a>
+                    <div id ="card-first">
+                        <a class = "hidden-menu" href="page-admissao.html#resultado">resultado</a>
+                        <a class = "hidden-menu" href="page-admissao.html#etapas">etapas</a>
+                        <a class = "hidden-menu" href="page-tech.html">germinare tech</a>
+                    </div>
+
+                    <a class="text" href="javascript:void(0)" onclick="abrirCardsSe(this)">acadêmico</a>
+                    <div id ="card-second">
+                        <a class = "hidden-menu" href="page-academico.html#formação-tech">formação técnica</a>
+                        <a class = "hidden-menu" href="page-academico.html#grade-de-disciplinas">grade de disciplina</a>
+                        <a class = "hidden-menu" href="page-academico.html#academias-germinare">academias</a>
+                        <a class = "hidden-menu" href="page-academico.html#projetos-germinare">projetos germinare</a>
+                    </div>
+
+                    <a class="text" href="javascript:void(0)" onclick="abrirCardsTh(this)">parcerias</a>
+                    <div id ="card-third">
+                        <a class = "hidden-menu" href="page-parceiros.html#jftituloprincipal">parceiros</a>
+                        <a class = "hidden-menu" href="page-parceiros.html#aulas-práticas">aulas práticas</a>
+                        <a class = "hidden-menu" href="page-parceiros.html#estágios">estágios</a>
+                        <a class = "hidden-menu" href="page-parceiros.html#titulogaleria">galeria</a>
+                    </div>
+    
+                    <a class="text" href="javascript:void(0)" onclick="abrirCardsFo(this)">sobre nós</a>
+                    <div id ="card-fourth">
+                        <a class="hidden-menu" href="page-sobre-nos.html#nossa-história">nossas história</a>
+                        <a class="hidden-menu" href="page-sobre-nos.html#nossas-crencas">nossa crenças</a>
+                        <a class="hidden-menu" href="page-sobre-nos.html#nossos-resultados">nossos resultados</a>
+                    </div>
+    
+                    <a class="text" href="javascript:void(0)" onclick="abrirCardsFiv(this)">contato</a>
+                    <div id ="card-five">
+                        <a class = "hidden-menu" href="page-contato.html#fale-conosco">fale conosco</a>
+                        <a class = "hidden-menu" href="page-contato.html#doacoes-info">doações</a>
+                    </div>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="abrirCards(this)" id="icon-header">
+                    <i  class="fa fa-bars"></i>
+                </a>
+                </div>
+            </div>
+        </header>
+    
+        <header id ="nav-container">
+            <div class="desktop-container">
+            <div class="topnav">
+                <div id="myLink">
+                    <a href="page-inicial.html" class="active"><img id="logo" src="../imgs/img-contato/assets/logo.png" alt="logo da germinare em tema branco"></a>
+                    <div class = "coluna">
+                        <a class="text" href="page-admissao.html" >admissão</a>
+                        <div class="barra orange">
+                            <div class ="card">
+                                <a class = "hidden-menu border" href="page-admissao.html#resultado">resultado</a>
+                                <a class = "hidden-menu border" href="page-admissao.html#etapas">etapas</a>
+                                <a class="hidden-menu" href="page-tech.html">germinare tech</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="coluna">
+                        <a class="text" href="page-academico.html" >acadêmico</a>
+                        <div class="barra">
+                            <div class ="card">
+                                <a class = "hidden-menu border" href="page-academico.html#formação-tech">formação técnica</a>
+                                <a class = "hidden-menu border" href="page-academico.html#grade-de-disciplinas">grade de disciplina</a>
+                                <a class = "hidden-menu border" href="page-academico.html#academias-germinare">academias</a>
+                                <a class = "hidden-menu" href="page-academico.html#projetos-germinare">projetos germinare</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="coluna">
+                        <a class="text" href="page-parceiros.html">parcerias</a>
+                        <div class="barra">
+                            <div class ="card">
+                                <a class = "hidden-menu border" href="page-parceiros.html#jftituloprincipal">parceiros</a>
+                                <a class = "hidden-menu border" href="page-parceiros.html#aulas-práticas">aulas práticas</a>
+                                <a class = "hidden-menu border" href="page-parceiros.html#estágios">estágios</a>
+                                <a class = "hidden-menu" href="page-parceiros.html#titulogaleria">galeria</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="coluna">
+                        <a class="text" href="page-sobre-nos.html">sobre nós</a>
+                        <div class="barra">
+                            <div class ="card">
+                                <a class="hidden-menu border" href="page-sobre-nos.html#nossa-história">nossas história</a>
+                                <a class="hidden-menu border" href="page-sobre-nos.html#nossas-crencas">nossa crenças</a>
+                                <a class="hidden-menu" href="page-sobre-nos.html#nossos-resultados">nossos resultados</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="coluna">
+                        <a class="text" href="page-contato.html">contato</a>
+                        <div class="barra">
+                            <div class ="card">
+                                <a class = "hidden-menu border" href="page-contato.html#fale-conosco">fale conosco</a>
+                                <a class = "hidden-menu" href="page-contato.html#doacoes-info">doações</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </header>
+
+    <main id="main">
+        <div class="banner">
+            <div class="banner-text">
+                <h1 style="font-weight: 800;" >Privacidade <br>de Dados</h1>
+                <p>Se você utiliza o nosso site, esta Política de Privacidade se aplica a “VOCÊ”. Temos como nosso compromisso resguardar a sua privacidade e proteger seus dados pessoais.</p>        
+            </div>
+        </div>
+
+        <div class="container-introduction">
+            <h2 class="h2-lgpd"  style="font-weight: 800;">Lei Geral de Proteção de Dados do Brasil</h2>
+            <p class="p-lgpd">LGPD é a sigla para Lei Geral de Proteção de Dados do Brasil, que estabelece regras sobre coleta, armazenamento, tratamento e compartilhamento de dados pessoais, impondo mais proteção e penalidades para o não cumprimento.</p>
+        </div>
+        <div class="data-lgpd">
+            <div class="container1">
+                <div class="data-container"  data-aos="fade-right">
+                    <div class="data-title" onclick="abreInfo1(this)" id="title-1">
+                        <span class="lgpd-logo" id="logo-1">LGPD</span>
+                        <h3>Dados coletados pela Escola Germinare</h3>
+                    </div>
+                    <p class="data-answer" id="data-answer-1">Para que possamos prestar nossos serviços com qualidade, podemos coletar diferentes tipos de dados sobre você. Para que possamos ser transparentes, listamos abaixo algumas das finalidades as quais poderemos tratar os seus dados pessoais, como nome, e-mail, sexo, data de nascimento, número de CPF/ RG, endereço, cookies, entre outros. </p>
+                </div>
+                <div class="data-container" data-aos="fade-left">
+                    <div class="data-title" onclick="abreInfo2(this)" id="title-2"> 
+                        <span class="lgpd-logo" id="logo-2">LGPD</span>
+                        <h3>Coleta de dados sensíveis e coleta de dados de menor</h3>
+                    </div>
+                    <p class="data-answer" id="data-answer-2">Em alguns casos, podemos realizar a coleta de alguns dados pessoais considerados como sensíveis (dado pessoal sobre origem racial ou étnica, convicção religiosa, opinião política, entre outros) ou a coleta de algum dado pessoal que possa vir a revelar algum dado sensível. Nesses casos, apenas iremos realizar o tratamento desses dados de acordo com alguma das bases legais disponíveis no artigo 11 da LGPD. <br> Além disso, durante a prestação de nossos serviços, podemos também coletar dados de menores de 12 anos. Nesses casos, sempre buscaremos a autorização de seu representante legal ou de um de seus pais, conforme regra presente no artigo 14 da LGPD.</p>
+                </div>
+                <div class="data-container"  data-aos="fade-right">
+                    <div class="data-title" onclick="abreInfo3(this)" id="title-3">
+                        <span class="lgpd-logo" id="logo-3">LGPD</span>
+                        <h3>Compartilhamento de dados pessoais</h3>
+                    </div>
+                    <div id="data-answer-3">
+                        <p class="data-answer">A Escola Germinare não compartilha seus dados pessoais para nenhuma empresa ou individuo, exceto nas seguintes hipóteses:</p>
+                        <ul class="lista">
+                            <li class="list-content">Podemos compartilhar seus dados pessoais a fim de cumprir com as legislações vigentes (Por exemplo, compartilhamento de dados ao Ministério da Educação – MEC);</li>
+                            <li class="list-content">Podemos compartilhar seus dados pessoais para hospedagem em plataformas de tecnologia de nossos parceiros;</li>
+                            <li class="list-content">Garantir a disponibilidade de nossos serviços por meio de nosso site </li>
+                        </ul>    
+                    </div>
+                </div>
+            </div>
+            <div class="container2">
+                <div class="data-container">
+                    <div class="data-title" onclick="abreInfo4(this)" id="title-4"  data-aos="fade-left">
+                        <span class="lgpd-logo" id="logo-4">LGPD</span>
+                        <h3>Seus direitos conforme a LGPD</h3>
+                    </div>
+                    <div id="data-answer-4">
+                        <p class="data-answer">A Escola Germinare, além de se preocupar com a segurança de seus dados, também se preocupa que você tenha acesso e conhecimento de todos os seus direitos:</p>
+                        <ul class="lista">
+                            <li class="list-content">
+                                <h4 class="list-title">Acesso, existência de tratamento e informação</h4>
+                                <p class="list-answer">Você pode requisitar e receber uma cópia dos seus dados pessoais que nós possuímos, bem como requerer a confirmação do tratamento que estamos realizando em seus dados.</p>
+                            </li>
+                            <li class="list-content">
+                                <h4 class="list-title">Retificação</h4>
+                                <p class="list-answer">Você pode solicitar a correção dos seus dados pessoais, caso identifique que alguns deles estão incorretos.</p>
+                            </li>
+                            <li class="list-content">
+                                <h4 class="list-title">Exclusão</h4>
+                                <p class="list-answer">Todos os dados coletados serão excluídos assim quando você requisitar ou quando estes não forem mais necessários para nossos serviços, salvo se houver qualquer outra razão para a sua manutenção.</p>
+                            </li>
+                            <li class="list-content">
+                                <h4 class="list-title">Oposição ao processamento</h4>
+                                <p class="list-answer">Você tem o direito de contestar em que contexto estamos tratando seus dados pessoais para diferentes finalidades.</p>
+                            </li>
+                            <li class="list-content">
+                                <h4 class="list-title">Solicitar anonimização, bloqueio ou eliminação de dados</h4>
+                                <p class="list-answer">Você pode pedir a suspensão do processamento de seus dados nos seguintes cenários: 
+                                    <ul>
+                                        <li>se quiser que nós estabeleçamos a precisão dos dados;</li>
+                                        <li>quando precisar que sejam mantidos os dados mesmo se não precisarmos mais deles, para exercer reivindicações legais;</li>
+                                        <li>se opor ao uso de seus dados, mas nesta hipótese precisamos verificar se temos motivos legítimos para usá-los.</li>
+                                    </ul>    
+                                <p>
+                            </li>
+                            <li class="list-content">
+                                <h4 class="list-title">Portabilidade de dados</h4>
+                                <p class="list-answer">Forneceremos a você, ou a terceiros que você escolheu, seus dados pessoais em formato estruturado.</p>
+                            </li>
+                            <li class="list-content">
+                                <h4 class="list-title">Retirar o seu consentimento</h4>
+                                <p class="list-answer">Você tem o direito de retirar o seu consentimento, mas isso não afetará a legalidade de qualquer processamento realizado anteriormente.</p>
+                            </li>
+                        </ul>
+                        <p class="data-answer">Talvez seja necessário solicitar informações específicas suas para nos ajudar a confirmar sua identidade e garantir seu direito de acessar seus dados pessoais. Esta é uma medida de segurança para garantir que os dados pessoais não sejam divulgados a qualquer pessoa que não tenha direito de recebê-los.</p>    
+                    </div>
+                </div>
+            </div>
+            <div class="container3"  data-aos="fade-right">
+                <div class="data-container">
+                    <div class="data-title" onclick="abreInfo5(this)" id="title-5">
+                        <span class="lgpd-logo" id="logo-5">LGPD</span> 
+                        <h3> Formas de contatar a Escola Germinare</h3>
+                    </div>
+                    <p class="data-answer" id="data-answer-5">O responsável pela base de dados no Brasil é o INSTITUTO J&F, caso você tenha dúvidas em relação a sua privacidade ao usar este site, encaminhe-as por meio do e-mail <a href="mailto:dpo@jfinvest.com.br">dpo@jfinvest.com.br</a>.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <div id ="social">
+            <a href="https://www.instagram.com/escolagerminare/"target="_blank"><img src="../imgs/img-academico/footer/Instagram.png" alt="logo do instagram" class ="logo"></a>
+            <a href="https://www.youtube.com/channel/UCtfT0wIFhW2jyCMR0ZtBuzg"target="_blank"><img src="../imgs/img-academico/footer/YouTube.png" alt="logo do youtube" class ="logo"></a>
+            <a href="https://www.linkedin.com/company/instituto-germinare/?trk=top_nav_home"target="_blank"><img src="../imgs/img-academico/footer/Linkedin.png" alt="logo do linkedin" class ="logo"></a>
+            <a href="https://www.facebook.com/germinareoficial" target="_blank"><img src="../imgs/img-academico/footer/Facebook.png" alt="logo do facebook" class ="logo"></a>
+        </div>
+        <div id ="contact">
+            <p>R. Irineu José Bordon - Vila Jaguara, São Paulo - SP, 05120-060</p>
+            <p>Telefone: (11) 3623-6000 </p>
+            <p>Escola Germinare – Escola de Negócios © 2021</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

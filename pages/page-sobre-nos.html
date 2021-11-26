@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/header-style.css">
+    <link rel="stylesheet" href="../styles/footer-style.css">
+    <link rel="stylesheet" href="../styles/carosel-style.css">
+    <link rel="stylesheet" href="../styles/sobre-nos-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../imgs/favicon.ico" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-1.9.1.js" defer></script>
+    <script src="../scripts/main-header.js" defer></script>
+    <title>Sobre Nós</title>
+</head>
+
+<body>
+    <header>
+        <header id ="header">
+            <div class="mobile-container">
+            <div class="topnav">
+                <a href="page-inicial.html" class="active"><img id="logo" src="../imgs/img-contato/assets/logo.png"
+                        alt="logo da germinare em tema branco"></a>
+                <div id="myLinks">
+                    <a class="text" href="javascript:void(0)" onclick="abrirCardsFi(this)">admissão</a>
+                    <div id ="card-first">
+                        <a class = "hidden-menu" href="page-admissao.html#resultado">resultado</a>
+                        <a class = "hidden-menu" href="page-admissao.html#etapas">etapas</a>
+                        <a class = "hidden-menu" href="page-tech.html">germinare tech</a>
+                    </div>
+
+                    <a class="text" href="javascript:void(0)" onclick="abrirCardsSe(this)">acadêmico</a>
+                    <div id ="card-second">
+                        <a class = "hidden-menu" href="page-academico.html#formação-tech">formação técnica</a>
+                        <a class = "hidden-menu" href="page-academico.html#grade-de-disciplinas">grade de disciplina</a>
+                        <a class = "hidden-menu" href="page-academico.html#academias-germinare">academias</a>
+                        <a class = "hidden-menu" href="page-academico.html#projetos-germinare">projetos germinare</a>
+                    </div>
+
+                    <a class="text" href="javascript:void(0)" onclick="abrirCardsTh(this)">parcerias</a>
+                    <div id ="card-third">
+                        <a class = "hidden-menu" href="page-parceiros.html#jftituloprincipal">parceiros</a>
+                        <a class = "hidden-menu" href="page-parceiros.html#aulas-práticas">aulas práticas</a>
+                        <a class = "hidden-menu" href="page-parceiros.html#estágios">estágios</a>
+                        <a class = "hidden-menu" href="page-parceiros.html#titulogaleria">galeria</a>
+                    </div>
+    
+                    <a class="text" href="javascript:void(0)" onclick="abrirCardsFo(this)">sobre nós</a>
+                    <div id ="card-fourth">
+                        <a class="hidden-menu" href="page-sobre-nos.html#nossa-história">nossas história</a>
+                        <a class="hidden-menu" href="page-sobre-nos.html#nossas-crencas">nossa crenças</a>
+                        <a class="hidden-menu" href="page-sobre-nos.html#nossos-resultados">nossos resultados</a>
+                    </div>
+    
+                    <a class="text" href="javascript:void(0)" onclick="abrirCardsFiv(this)">contato</a>
+                    <div id ="card-five">
+                        <a class = "hidden-menu" href="page-contato.html#fale-conosco">fale conosco</a>
+                        <a class = "hidden-menu" href="page-contato.html#doacoes-info">doações</a>
+                    </div>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="abrirCards(this)" id="icon-header">
+                    <i  class="fa fa-bars"></i>
+                </a>
+                </div>
+            </div>
+        </header>
+    
+        <header id ="nav-container">
+            <div class="desktop-container">
+            <div class="topnav">
+                <div id="myLink">
+                    <a href="page-inicial.html" class="active"><img id="logo" src="../imgs/img-contato/assets/logo.png" alt="logo da germinare em tema branco"></a>
+                    <div class = "coluna">
+                        <a class="text" href="page-admissao.html" >admissão</a>
+                        <div class="barra">
+                            <div class ="card">
+                                <a class = "hidden-menu border" href="page-admissao.html#resultado">resultado</a>
+                                <a class = "hidden-menu border" href="page-admissao.html#etapas">etapas</a>
+                                <a class="hidden-menu" href="page-tech.html">germinare tech</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="coluna">
+                        <a class="text" href="page-academico.html" >acadêmico</a>
+                        <div class="barra">
+                            <div class ="card">
+                                <a class = "hidden-menu border" href="page-academico.html#formação-tech">formação técnica</a>
+                                <a class = "hidden-menu border" href="page-academico.html#grade-de-disciplinas">grade de disciplina</a>
+                                <a class = "hidden-menu border" href="page-academico.html#academias-germinare">academias</a>
+                                <a class = "hidden-menu" href="page-academico.html#projetos-germinare">projetos germinare</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="coluna">
+                        <a class="text" href="page-parceiros.html">parcerias</a>
+                        <div class="barra">
+                            <div class ="card">
+                                <a class = "hidden-menu border" href="page-parceiros.html#jftituloprincipal">parceiros</a>
+                                <a class = "hidden-menu border" href="page-parceiros.html#aulas-práticas">aulas práticas</a>
+                                <a class = "hidden-menu border" href="page-parceiros.html#estágios">estágios</a>
+                                <a class = "hidden-menu" href="page-parceiros.html#titulogaleria">galeria</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="coluna">
+                        <a class="text" href="page-sobre-nos.html">sobre nós</a>
+                        <div class="barra orange">
+                            <div class ="card">
+                                <a class="hidden-menu border" href="page-sobre-nos.html#nossa-história">nossas história</a>
+                                <a class="hidden-menu border" href="page-sobre-nos.html#nossas-crencas">nossa crenças</a>
+                                <a class="hidden-menu" href="page-sobre-nos.html#nossos-resultados">nossos resultados</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="coluna">
+                        <a class="text" href="page-contato.html">contato</a>
+                        <div class="barra">
+                            <div class ="card">
+                                <a class = "hidden-menu border" href="page-contato.html#fale-conosco">fale conosco</a>
+                                <a class = "hidden-menu" href="page-contato.html#doacoes-info">doações</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </header>
+
+    <main id="main">
+        <div id="title">
+            <div class="container-text">
+                <p class="primeiro">nossa missão</p>
+                <p class="segundo">é formar jovens</p>
+                <p class="terceiro">administradores</p>
+                <p class="quarto">e cidadãos</p>
+                <a href="#scroll-here"><img class="seta" src="../imgs/img-sobre-nos/assets/imgs/img-sobre-nos/assets/seta.png" alt="seta para baixo"></a>
+            </div>
+        </div>
+
+        <div class="container-origem">
+            <div class="container-div">
+            <div class="origem" id="scroll-here">
+                <div class="background" id="nossa-história">
+                    <p class="subtitle-origens">nossa <span style="color: #7174ff;">história</span></p>
+                </div>
+                <div class="container">
+                    <h1 class="title-words" data-aos="fade-right">A Escola Germinare nasceu <span style="font-weight: 600;">em <span style="color: #7174ff;">setembro</span> de <span
+                            style="color: #7174ff;">2009</span></span></h1>
+                    <p class="words" data-aos="fade-right" data-aos-duration="250">
+                        Em 2009, o conjunto de valores e ações compartilhados pela J&F Investimentos foram consolidados sob
+                        a figura do Instituto Germinare. Desde a criação do projeto, outras empresas estão se tornando
+                        apoiadoras desta iniciativa social, que visa transformar a vida de crianças e adolescentes através
+                        da educação.
+                    </p>
+
+                    <p class="words" data-aos="fade-right" data-aos-duration="500">
+                        Em 2010, o Instituto inaugurou a sua Escola Germinare, que oferece Ensino Fundamental II e Ensino
+                        Médio, e está localizada em São Paulo, em um terreno de uma das empresas da J&F Investimentos.
+                    </p>
+
+                    <p class="words" data-aos="fade-right" data-aos-duration="1000">
+                        Com o compromisso de oferecer alta qualidade de ensino para jovens potenciais, nosso objetivo é
+                        formar administradores de empresas e gestores de negócios. Assim, o grande ideal é formar um grupo
+                        de empresários e ampliar este projeto para mais jovens interessados.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="videocontainer"> 
+
+            <div class="textvideo" data-aos="fade-right">     
+                <p class="data"> <div class="number">+ 10.000 </div> m2 de área construída </p> 
+                <p class="data"> <div class="number"> + 800</div> horas/ano de Educação Profissional. Equivalente a um MBA.</p> 
+                <p class="data"> <div class="number"> + 4.200 </div> horas de experiência profissional prática nas empresas do grupo J&F</p> 
+                <p class="data"> <div class="number"> + 5.000 </div> horas de aprendizado profissional, equivalente a uma univerdade.</p> 
+    
+            </div> 
+            <div class="imgvideo" id="imgvideo" data-aos="fade-left"> 
+                <button class="button-play" onclick="openVideo()"><span>▶</span> Vídeo Institucional</button>
+            </div> 
+            <iframe id="video" class="video-institucional" src="https://www.youtube.com/embed/6BMlkTbvGXI" title="YouTube video player" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+        </div>
+
+        <div class="missao">
+            <div class="background" id="nossas-crencas">
+                <p class="subtitle-origens" id="subtitle-crencas">nossas <span style="color: #7174ff;">crenças</span></p>
+            </div>
+            <div class="container-missao">
+                <div class="container-text-missao">
+                    <h1 class="title-missao" style="font-weight: 500;" data-aos="fade-right">nossa cultura,<br><span style="font-weight: 700;">em que acreditamos </span></h1>
+                    <p data-aos="fade-right" data-aos-duration ="800">Nossa missão é formar líderes e gestores em negócios preparados de maneira efetiva, por meio de uma seleção de potenciais talentos e de uma educação de alta qualidade, conectada com a realidade empresarial, voltada para o desenvolvimento de habilidades de liderança, orientação para resultados, capacidade de inovação, visão sistêmica e conduta ética.</p>
+                    <p data-aos="fade-right" data-aos-duration="1200">O jeito de ser Germinare: buscamos jovens com brilho nos olhos, que desejam vencer na vida, líderes, motivados, curiosos e que sonham em ser administradores de empresas. Jovens que tenham aderência à missão, aos valores e crenças de nossa escola de negócios.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="carousel">
+            <div class="atitude-de-dono" id="atitude">
+                <div class=text-valores>
+                    <h1>Atitude de Dono</h1>
+                    <p>Comprometido com o resultado, conhece com profundidade aquilo que faz e tem a visão do todo. É mão na massa, busca sempre ser o melhor naquilo que faz e não desiste nunca. Indigna-se, não fica quieto nem se omite quando vê algo que possa ser melhorado. Está engajado com a cultura da organização.</p>
+                </div>
+            </div>
+            <div class="determinacao" id="determinacao">
+                <div class=text-valores>
+                    <h1>Determinação</h1>
+                    <p>É obstinado, entrega resultados superiores e cumpre seus compromissos. Faz as coisas acontecerem, busca alternativas para os problemas e engaja as pessoas em prol de um objetivo comum. Tem senso de urgência, atitude de dono e não desiste nunca.</p>
+                </div>
+            </div>
+            <div class="disciplina" id="disciplina">
+                <div class=text-valores>
+                    <h1>Disciplina</h1>
+                    <p>Cumpre o combinado, é pontual com horário e seus compromissos. Executa suas tarefas de forma disciplinada. É focado, pragmático, otimiza o tempo, atividades e recursos. Entrega resultados, não cria justificativas e desculpas.</p>
+                </div>
+            </div>
+            <div class="disponibilidade" id="disponibilidade">
+                    <div class="text-valores">
+                    <h1>Disponibilidade</h1>
+                    <p>É receptivo, acessível, disponível, não tem dia e não tem hora, está sempre pronto e tem o trabalho como prioridade. Está aberto ao novo, às mudanças e motivado para novos desafios.</p>
+                </div>
+            </div>
+            <div class="franqueza" id="franqueza">
+                <div class=text-valores >
+                    <h1>Franqueza</h1>
+                    <p>É direto, sincero, verdadeiro e transparente em suas relações, sempre com respeito, de forma positiva, agregadora e acolhedora. Não se omite, expressa suas opiniões mesmo quando contrária aos demais. Sabe dizer não.</p>
+                </div>
+            </div>
+            <div class="humildade" id="humildade">
+                <div class=text-valores>
+                    <h1>Humildade</h1>
+                    <p>Sabe ouvir, é atencioso, considera a opinião dos outros, não importa quem fez, importa que fizemos. Não tem vergonha de perguntar nem de dizer que não sabe. Não é arrogante nem vaidoso e age com respeito. Não se preocupa com status nem se acha dono da verdade. Prioriza o nós e não o eu.</p>
+                </div>
+            </div>
+            <div class="simplicidade" id="simplicidade">
+                <div class=text-valores>
+                    <h1>Simplicidade</h1>
+                    <p>Faz as coisas acontecerem de forma simples e prática, é mão na massa, vai direto ao ponto, descomplica e desburocratiza respeitando as normas.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="dre-banner">
+            <div class="governanca">
+                <h2 data-aos="fade-left">Governança</h2>
+                <p class="text-governanca" data-aos="fade-left">Como forma de manter a transparência junto a sociedade e apoiadores, publicamos
+                    abaixo os demonstrativos financeiros da Escola Germinare:</p>
+                <p id="nossos-resultados2">nossos <span style="color: #7174ff;"><br>resultados</span></p>
+            </div>
+
+            <div class="background" id="nossos-resultados">
+                <p class="subtitle-origens" id="nossos-resultados" data-aos="fade-left">nossos <span style="color: #7174ff;">resultados</span></p>
+            </div>    
+        </div>
+
+        <div class="container-demonstrativos">
+            <div class="carrosel-demonstrativos" data-aos="zoom-in">
+                <a href="http://www.escolagerminare.org.br/wp-content/uploads/2015/08/1171-21_Relatorio-de-Auditoria-_Germinare_2020-3.pdf" target="_blank" el="noopener noreferrer">
+                    <div class="demonstrativos">
+                        <img src="../imgs/img-sobre-nos/assets/imgs/img-sobre-nos/assets/logo-pequeno.png" alt="logo" class="logo-azul">
+                        <p>
+                            DEMOSTRATIVO <br>
+                            FINANCEIRO <br>
+                            2020
+                        </p>
+                        <img src="../imgs/img-sobre-nos/assets/imgs/seta.svg" class="seta-branca" alt="seta" width="15px">
+                    </div>
+                </a>
+
+                <a href="http://www.escolagerminare.org.br/wp-content/uploads/2015/08/demonstrativo_Instituto-Germinare.pdf" target="_blank" rel="noopener noreferrer"  data-aos="zoom-in">
+                    <div class="demonstrativos">
+                        <img src="../imgs/img-sobre-nos/assets/imgs/img-sobre-nos/assets/logo-pequeno.png" alt="logo" class="logo-azul"  data-aos="zoom-in">
+                        <p>
+                            DEMOSTRATIVO <br>
+                            FINANCEIRO <br>
+                            2019
+                        </p>
+                        <img src="../imgs/img-sobre-nos/assets/imgs/seta.svg" class="seta-branca" alt="seta" width="15px"  data-aos="zoom-in">
+                    </div>
+                </a>
+
+
+                <a href="http://www.escolagerminare.org.br/wp-content/uploads/2015/08/demonstrativo_Instituto-Germinare.pdf" target="_blank" rel="noopener noreferrer"  data-aos="zoom-in">
+                    <div class="demonstrativos" data-aos="zoom-in">
+                        <img src="../imgs/img-sobre-nos/assets/imgs/img-sobre-nos/assets/logo-pequeno.png" alt="logo" class="logo-azul">
+                        <p>
+                            DEMOSTRATIVO <br>
+                            FINANCEIRO <br>
+                            2018
+                        </p>
+                        <img src="../imgs/img-sobre-nos/assets/imgs/seta.svg" class="seta-branca" alt="seta" width="15px"  data-aos="zoom-in">
+                    </div>
+                </a>
+
+                <a href="http://www.escolagerminare.org.br/wp-content/uploads/2015/08/demonstrativo_Instituto-Germinare.pdf" target="_blank" rel="noopener noreferrer"  data-aos="zoom-in">
+                    <div class="demonstrativos" data-aos="zoom-in">
+                        <img src="../imgs/img-sobre-nos/assets/imgs/img-sobre-nos/assets/logo-pequeno.png" alt="logo" class="logo-azul">
+                        <p>
+                            DEMOSTRATIVO <br>
+                            FINANCEIRO <br>
+                            2017
+                        </p>
+                        <img src="../imgs/img-sobre-nos/assets/imgs/seta.svg" class="seta-branca" alt="seta" width="15px">
+                    </div>
+                </a>
+
+                <a href="http://www.escolagerminare.org.br/wp-content/uploads/2015/08/Demonstrações-financeiras-31-12-2016-Instituto-Germinare-com-parecer.pdf" target="_blank" rel="noopener noreferrer">
+                    <div class="demonstrativos" data-aos="zoom-in">
+                        <img src="../imgs/img-sobre-nos/assets/imgs/img-sobre-nos/assets/logo-pequeno.png" alt="logo" class="logo-azul">
+                        <p>
+                            DEMOSTRATIVO <br>
+                            FINANCEIRO <br>
+                            2016
+                        </p>
+                        <img src="../imgs/img-sobre-nos/assets/imgs/seta.svg" class="seta-branca" alt="seta" width="15px">
+                    </div>
+                </a>
+
+                <a href="http://www.escolagerminare.org.br/wp-content/uploads/2015/08/152593-Demonstrações-financeiras-31-12-2015-Instituto-Germinare_CLIENTE.pdf" target="_blank" rel="noopener noreferrer">
+                    <div class="demonstrativos" data-aos="zoom-in">
+                        <img src="../imgs/img-sobre-nos/assets/imgs/img-sobre-nos/assets/logo-pequeno.png" alt="logo" class="logo-azul">
+                        <p>
+                            DEMOSTRATIVO <br>
+                            FINANCEIRO <br>
+                            2015
+                        </p>
+                        <img src="../imgs/img-sobre-nos/assets/imgs/seta.svg" class="seta-branca" alt="seta" width="15px">
+                    </div>
+                </a>
+
+                <a href="http://www.escolagerminare.org.br/pdf/2014.pdf" target="_blank" rel="noopener noreferrer">
+                    <div class="demonstrativos" data-aos="zoom-in">
+                        <img src="../imgs/img-sobre-nos/assets/imgs/img-sobre-nos/assets/logo-pequeno.png" alt="logo" class="logo-azul">
+                        <p>
+                            DEMOSTRATIVO <br>
+                            FINANCEIRO <br>
+                            2014
+                        </p>
+                        <img src="../imgs/img-sobre-nos/assets/imgs/seta.svg" class="seta-branca" alt="seta" width="15px">
+                    </div>
+                </a>
+
+                <a href="http://www.escolagerminare.org.br/pdf/2013.pdf" target="_blank" rel="noopener noreferrer"  data-aos="zoom-in">
+                    <div class="demonstrativos">
+                        <img src="../imgs/img-sobre-nos/assets/imgs/img-sobre-nos/assets/logo-pequeno.png" alt="logo" class="logo-azul">
+                        <p>
+                            DEMOSTRATIVO <br>
+                            FINANCEIRO <br>
+                            2013
+                        </p>
+                        <img src="../imgs/img-sobre-nos/assets/imgs/seta.svg" class="seta-branca" alt="seta" width="15px">
+                    </div>
+                </a>
+
+                <a href="http://www.escolagerminare.org.br/wp-content/uploads/2015/08/Demonstrativo-Instituto2012.pdf" target="_blank" rel="noopener noreferrer"  data-aos="zoom-in">
+                    <div class="demonstrativos">
+                        <img src="../imgs/img-sobre-nos/assets/imgs/img-sobre-nos/assets/logo-pequeno.png" alt="logo" class="logo-azul">
+                        <p>
+                            DEMOSTRATIVO <br>
+                            FINANCEIRO <br>
+                            2012
+                        </p>
+                        <img src="../imgs/img-sobre-nos/assets/imgs/seta.svg" class="seta-branca" alt="seta" width="15px">
+                    </div>
+                </a>
+
+                <a href="http://www.escolagerminare.org.br/pdf/2011.pdf" target="_blank" rel="noopener noreferrer"  data-aos="zoom-in">
+                    <div class="demonstrativos">
+                        <img src="../imgs/img-sobre-nos/assets/imgs/img-sobre-nos/assets/logo-pequeno.png" alt="logo" class="logo-azul">
+                        <p>
+                            DEMOSTRATIVO <br>
+                            FINANCEIRO <br>
+                            2011
+                        </p>
+                        <img src="../imgs/img-sobre-nos/assets/imgs/seta.svg" class="seta-branca" alt="seta" width="15px">
+                    </div>
+                </a>
+
+                <a href="http://www.escolagerminare.org.br/pdf/2010.pdf" target="_blank" rel="noopener noreferrer"  data-aos="zoom-in">
+                    <div class="demonstrativos">
+                        <img src="../imgs/img-sobre-nos/assets/imgs/img-sobre-nos/assets/logo-pequeno.png" alt="logo" class="logo-azul">
+                        <p>
+                            DEMOSTRATIVO <br>
+                            FINANCEIRO <br>
+                            2010
+                        </p>
+                        <img src="../imgs/img-sobre-nos/assets/imgs/seta.svg" class="seta-branca" alt="seta" width="15px">
+                    </div>
+                </a>
+            </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <div id="social">
+            <a href="https://www.instagram.com/escolagerminare/" target="_blank"><img
+                    src="../imgs/img-academico/footer/Instagram.png" alt="logo do instagram" class="logo"></a>
+            <a href="https://www.youtube.com/channel/UCtfT0wIFhW2jyCMR0ZtBuzg" target="_blank"><img
+                    src="../imgs/img-academico/footer/YouTube.png" alt="logo do youtube" class="logo"></a>
+            <a href="https://www.linkedin.com/company/instituto-germinare/?trk=top_nav_home" target="_blank"><img
+                    src="../imgs/img-academico/footer/Linkedin.png" alt="logo do linkedin" class="logo"></a>
+            <a href="https://www.facebook.com/germinareoficial" target="_blank"><img
+                    src="../imgs/img-academico/footer/Facebook.png" alt="logo do facebook" class="logo"></a>
+        </div>
+        <div id="contact">
+            <p>R. Irineu José Bordon - Vila Jaguara, São Paulo - SP, 05120-060</p>
+            <p>Telefone: (11) 3623-6000 </p>
+            <p>Escola Germinare – Escola de Negócios © 2021</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!--SLICK-->
+    <script src='https://code.jquery.com/jquery-1.11.0.min.js'></script>
+    <script src='https://code.jquery.com/jquery-migrate-1.2.1.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js'></script><script  src="./main-carousel.js"></script>
+    <!--SLICK-->
+    <script src="../scripts/main-carousel.js"></script>
+    <script src="../scripts/main-sobre-nos.js"></script>
+</body>
+
+</html>

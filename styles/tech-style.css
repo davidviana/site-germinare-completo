@@ -1,0 +1,308 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #1F1F1F;
+    color: white;
+}
+
+/*MOBILE*/
+.banner-tech {
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../imgs/img-tech/img/banner.jpg');
+    background-size: cover;
+    padding: 20px;
+    height: max-content;
+    padding-top: 10%;
+}
+
+.banner-tech > img {
+    display: none;
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.banner-tech > a > button {
+    margin-top: 5%;
+}
+
+button {
+    background-color: transparent;
+    color: white;
+    padding: 2%;
+    border: 2px solid white;
+    border-radius: 7px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+.introducao{
+    padding: 20px;
+}
+
+.introducao h3 {
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.introducao a {
+    color: #EF6421;
+    font-weight: bold;
+}
+
+.introducao p {
+    margin-bottom: 10px;
+}
+
+.introducao-video p {
+    margin-top: 10px;
+}
+
+embed {
+    width: 250px;
+    height: 270px;
+    padding-top: 20px;
+    display: block;
+    margin: 0 auto;
+}
+
+.grid-data {
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: repeat(2, 160px);
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.grid-data > div {
+    background-color: #1F1F1F;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    padding-top: 10px;
+    display: block;
+    height: 250px;
+}
+
+.grid-data p {
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+#main img {
+    width: auto;
+    height: 40px;
+}
+
+#grid1 {
+    transform: translateY(15%);
+}
+
+#grid2 {
+    transform: translateY(5%);
+}
+
+#grid3 {
+    transform: translateY(5%);
+}
+
+#grid4 {
+    transform: translateY(25%);
+}
+
+#grid5 {
+    transform: translateY(25%);
+}
+
+#grid6 {
+    transform: translateY(15%);
+}
+
+.residencia-h1 {
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('../imgs/img-tech/img/banner-residencia.jpg');
+    background-size: cover;
+    padding: 50px 20px;
+}
+
+.residencia p {
+    padding: 10px 20px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+#main {
+    font-size: 15px;
+}
+
+.residencia-text {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    line-height: 125%;
+}
+
+/*DESKTOP*/
+@media only screen and (min-width: 1024px) {
+    .banner-tech {
+        background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('../imgs/img-tech/img/banner.jpg');
+        padding: 0;
+    }
+
+    .banner-text {
+        padding: 120px 60px;
+    }
+    
+    .banner-tech > img {
+        display: flex;
+        width: 100px;
+        height: 80px;
+        float: right;
+        margin: 50px;
+    }
+
+    .banner-tech h1 {
+        font-size: 70px;
+        width: 30%;
+        margin-bottom: 20px;
+    }
+
+    .banner-tech > div > a > button {
+        margin-top: 2%;
+    }
+    
+    button {
+        padding: 1.5%;
+        font-size: 20px;
+        font-weight: bold;
+        border: 3px solid white;
+        transition: all 0.4s ease-in-out;
+    }
+
+    button:hover {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    
+
+    .banner-tech p {
+        width: 60%;
+    }
+
+    #main p {
+        font-size: 18px;
+        line-height: 125%;
+    }
+    
+    .introducao{
+        padding: 50px;
+        display: flex;
+    }
+    
+    .introducao-content {
+        display: block;
+    }
+
+    .introducao-content p {
+        font-size: 18px;
+        width: 90%;
+    }
+
+    .introducao h3 {
+        font-size: 35px;
+        width: 70%;
+        margin-bottom: 30px;
+    }
+    
+    .introducao-video {
+        display: block;
+        margin: auto;
+    }
+
+    .introducao-video p {
+        margin-top: 20px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    embed {
+        width: 450px;
+        height: 470px;
+    }
+    
+    .grid-data {
+        grid-template-columns: repeat(3, 380px);
+        padding: 50px 0;
+    }
+    
+    .grid-data > div {
+        padding: 40px 20px;
+        margin: 10px;
+        height: 200px;
+    }
+    
+    img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .grid-data p {
+        font-size: 20px;
+        margin-top: 15px;
+    }
+
+    .grid-data > #grid5 > p, #grid1 > p {
+        margin-top: 20px;
+    }
+
+    #grid2, #grid3{
+        transform: translateY(5%);
+    }
+    
+    #grid1 {
+        transform: translateY(10%);
+    }
+
+    #grid4, #grid6 {
+        transform: translateY(25%);
+    }
+
+    #grid5 {
+        transform: translateY(35%);
+    }
+
+    .residencia-h1 {
+        padding: 150px 50px;
+    }
+
+    .residencia-h1 > h1 {
+        font-size: 50px;
+        width: 50%;
+    }
+    
+    .residencia p {
+        padding: 10px 50px;
+        font-size: 20px;
+    }
+    
+    .residencia-text {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .orange {
+        background: #EF6421;
+    }
+}

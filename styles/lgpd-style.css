@@ -1,0 +1,189 @@
+html {
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    background: #1F1F1F;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#main{
+    margin-bottom: 50px;
+}
+
+li {
+    list-style-type: circle;
+}
+
+main h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+main h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+main h3 {
+    color: white;
+    font-weight: 600;
+}
+
+.lgpd-logo {
+    display: none;
+}
+
+.banner {
+    background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url(../imgs/img-lgpd/background.jpg);
+    background-position: top center;
+    background-size: cover;
+    height: 60vh;
+    margin-bottom: 40px;
+    padding: 20px;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+
+.data-container, .container-introduction {
+    padding: 20px;
+}
+
+.data-title {
+    border: 1px solid white;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    transition: all 0.4s ease-in-out;
+}
+
+.h2-lgpd {
+    margin-bottom: 10px;
+}
+
+#data-answer-1, #data-answer-2, #data-answer-3, #data-answer-4, #data-answer-5, ul  {
+    background-color: white;
+    color: #1F1F1F;
+    background-color: white;
+    display: none;
+    padding: 20px;
+}
+
+.data-title:hover {
+    cursor: pointer;
+    background-color: #2E3092;
+    border-color: #2E3092;
+}
+
+a {
+    color: #2E3092;
+    font-weight: bold;
+}
+
+
+li {
+    margin-top: 8px;
+    margin-left: 30px;
+}
+
+@media only screen and (min-width: 1024px) {
+    #main{
+        margin-bottom: 50px;
+    }
+    
+    main p {
+        font-size: 18px;
+    }
+
+    main li {
+        font-size: 18px;
+    }
+
+    main h1 {
+        font-size: 50px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+    
+    main h2 {
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+    
+    main h3 {
+        color: white;
+        font-weight: 600;
+    }
+
+    .banner {
+        margin-bottom: 70px;
+        padding: 40px;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    .banner-text {
+        width: 65%;
+    }
+
+    .banner-text > h1 {
+        font-size: 32px;
+    }
+
+    .data-container, .container-introduction {
+        padding: 10px;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    
+    .container-introduction {
+        margin-bottom: 40px;
+    }
+
+    .data-answer {
+        margin-top: 15px;
+    }
+
+    .data-title {
+        padding: 20px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .data-title h3 {
+        margin: auto 15px;
+    }
+
+    li {
+        margin-top: 10px;
+        margin-left: 60px;
+    }
+
+    .lgpd-logo {
+        background-color: white;
+        display: flex;
+        color:  #1F1F1F;
+        font-weight: 600;
+        width: min-content;
+        padding: 5px;
+        font-size: 20px;
+    }
+
+    #data-answer-1, #data-answer-2, #data-answer-3, #data-answer-4, #data-answer-5 {
+        margin-top: 10px;
+        padding: 25px;
+        margin-top: 0px;
+    }
+
+    .h2-lgpd {
+        font-size: 25px;
+    }
+}

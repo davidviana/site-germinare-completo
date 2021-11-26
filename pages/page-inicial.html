@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Links - fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Links - Css RESET -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css'><link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="../imgs/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/header-style.css">
+    <link rel="stylesheet" href="../styles/footer-style.css">
+    <link rel="stylesheet" href="../styles/inicial-style.css">
+    <script src="../scripts/main-header.js"></script>
+    <script src="../scripts/main-inicial.js" defer></script>
+    <title>Página Inicial</title>
+</head>
+<body>
+    <header>
+        <header id ="header">
+            <div class="mobile-container">
+            <div class="topnav">
+                <a href="page-inicial.html" class="active" style="height: 46px;"><img id="logo" src="../imgs/img-contato/assets/logo.png"
+                        alt="logo da germinare em tema branco"></a>
+                <div id="myLinks">
+                    <a class="text" href="javascript:void(0)" onclick="abrirCardsFi(this)">admissão</a>
+                    <div id ="card-first">
+                        <a class = "hidden-menu" href="page-admissao.html#resultado">resultado</a>
+                        <a class = "hidden-menu" href="page-admissao.html#etapas">etapas</a>
+                        <a class = "hidden-menu" href="page-tech.html">germinare tech</a>
+                    </div>
+
+                    <a class="text" href="javascript:void(0)" onclick="abrirCardsSe(this)">acadêmico</a>
+                    <div id ="card-second">
+                        <a class = "hidden-menu" href="page-academico.html#formação-tech">formação técnica</a>
+                        <a class = "hidden-menu" href="page-academico.html#grade-de-disciplinas">grade de disciplina</a>
+                        <a class = "hidden-menu" href="page-academico.html#academias-germinare">academias</a>
+                        <a class = "hidden-menu" href="page-academico.html#projetos-germinare">projetos germinare</a>
+                    </div>
+
+                    <a class="text" href="javascript:void(0)" onclick="abrirCardsTh(this)">parcerias</a>
+                    <div id ="card-third">
+                        <a class = "hidden-menu" href="page-parceiros.html#jftituloprincipal">parceiros</a>
+                        <a class = "hidden-menu" href="page-parceiros.html#aulas-práticas">aulas práticas</a>
+                        <a class = "hidden-menu" href="page-parceiros.html#estágios">estágios</a>
+                        <a class = "hidden-menu" href="page-parceiros.html#titulogaleria">galeria</a>
+                    </div>
+    
+                    <a class="text" href="javascript:void(0)" onclick="abrirCardsFo(this)">sobre nós</a>
+                    <div id ="card-fourth">
+                        <a class="hidden-menu" href="page-sobre-nos.html#nossa-história">nossas história</a>
+                        <a class="hidden-menu" href="page-sobre-nos.html#nossas-crencas">nossa crenças</a>
+                        <a class="hidden-menu" href="page-sobre-nos.html#nossos-resultados">nossos resultados</a>
+                    </div>
+    
+                    <a class="text" href="javascript:void(0)" onclick="abrirCardsFiv(this)">contato</a>
+                    <div id ="card-five">
+                        <a class = "hidden-menu" href="page-contato.html#fale-conosco">fale conosco</a>
+                        <a class = "hidden-menu" href="page-contato.html#doacoes-info">doações</a>
+                    </div>
+
+                    <a class="text" href="page-portal-germinare.html">portal germinare</a>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="abrirCards(this)" id="icon-header">
+                    <i  class="fa fa-bars"></i>
+                </a>
+                </div>
+            </div>
+        </header>
+
+        <header id ="nav-container">
+            <div class="desktop-container">
+            <div class="topnav">
+                <div id="myLink">
+                    <a href="page-inicial.html" class="active"><img id="logo" src="../imgs/img-contato/assets/logo.png" alt="logo da germinare em tema branco"></a>
+                    <div class = "coluna">
+                        <a class="text" href="page-admissao.html" >admissão</a>
+                        <div class="barra orange">
+                            <div class ="card">
+                                <a class = "hidden-menu border" href="page-admissao.html#resultado">resultado</a>
+                                <a class = "hidden-menu border" href="page-admissao.html#etapas">etapas</a>
+                                <a class="hidden-menu" href="page-tech.html">germinare tech</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="coluna">
+                        <a class="text" href="page-academico.html" >acadêmico</a>
+                        <div class="barra">
+                            <div class ="card">
+                                <a class = "hidden-menu border" href="page-academico.html#formação-tech">formação técnica</a>
+                                <a class = "hidden-menu border" href="page-academico.html#grade-de-disciplinas">grade de disciplina</a>
+                                <a class = "hidden-menu border" href="page-academico.html#academias-germinare">academias</a>
+                                <a class = "hidden-menu" href="page-academico.html#projetos-germinare">projetos germinare</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="coluna">
+                        <a class="text" href="page-parceiros.html">parcerias</a>
+                        <div class="barra">
+                            <div class ="card">
+                                <a class = "hidden-menu border" href="page-parceiros.html#jftituloprincipal">parceiros</a>
+                                <a class = "hidden-menu border" href="page-parceiros.html#aulas-práticas">aulas práticas</a>
+                                <a class = "hidden-menu border" href="page-parceiros.html#estágios">estágios</a>
+                                <a class = "hidden-menu" href="page-parceiros.html#titulogaleria">galeria</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="coluna">
+                        <a class="text" href="page-sobre-nos.html">sobre nós</a>
+                        <div class="barra">
+                            <div class ="card">
+                                <a class="hidden-menu border" href="page-sobre-nos.html#nossa-história">nossas história</a>
+                                <a class="hidden-menu border" href="page-sobre-nos.html#nossas-crencas">nossa crenças</a>
+                                <a class="hidden-menu" href="page-sobre-nos.html#nossos-resultados">nossos resultados</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="coluna">
+                        <a class="text" href="page-contato.html">contato</a>
+                        <div class="barra">
+                            <div class ="card">
+                                <a class = "hidden-menu border" href="page-contato.html#fale-conosco">fale conosco</a>
+                                <a class = "hidden-menu" href="page-contato.html#doacoes-info">doações</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="page-portal-germinare.html"><img id="user" src="../imgs/icone.png" alt="icone"></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </header>
+
+    <main id="main">
+
+        <!-- Caroulsel -->
+        <div class="quadradoazul">
+        
+        </div>
+        <div class="frase">
+            O seu futuro começa aqui!
+        </div>
+        <div class="carousel">
+            <div class="div1">
+                <h1 class="titulo1">
+                    Vagas abertas!
+                </h1> 
+                <h1 class="titulo1dois" id="titulo2">
+                    Admissão 2021/2022
+                </h1>
+                <a href="https://seufuturocomecaaqui.com.br/tec/passo-1" class="btn-inscrever primeiro">Inscreva-se já!</a>
+            </div>
+            <div class="div2">
+                <h1 class="titulo1">
+                    Ensino médio tech!
+                </h1> 
+                <h1 class="titulo1dois subtitle subtitle2 " id="descrição1">
+                    Se você está  matriculado no 9° ano, e tem interesse em iniciar o Ensino Médio conosco, fique atento às datas e inscreva-se!
+                </h1>
+                <a  href="page-tech.html"><button class="btn-inscrever btn2 segundo" id="btncarousel2">Saiba mais</button></a>
+            </div>
+            <div class="div3">
+                <h1 class="titulo1 titulo2">
+                    Conheça a nossa equipe de professores!
+                </h1> 
+                <a href="page-academico.html#academias-germinare"><button class="btn-inscrever btn3 terceiro">Saiba mais</button></a>
+            </div>
+            <div class="div4">
+                <h1 class="titulo1 titulo2">
+                    Conheça o jornal da germinare
+                </h1> 
+                <a href="page-gazeta.html"><button class="btn-inscrever btn3 quarto">Saiba mais</button></a>
+            </div>
+            <div class="div5">
+                <h1 class="titulo1">
+                    Retorno às aulas presenciais
+                </h1> 
+                <h1 class="subtitlequinto" id="texto2">
+                    Garantimos o seguimento de todas as medidas de segurança e higiene para um retorno adequado a todos!
+                </h1>
+            </div>
+        </div>
+        
+            <div class="titlemaincontainer" id="sobe">
+                Conheça o <span style="font-weight: 800" id="germinaretitle"> Instituto Germinare </span> 
+            </div>
+            <div class="maincontainercard">
+                <div class="container-cards">
+                    <img src="../imgs/img-inicial/img/image 2 (2).png" alt="" class="cardone-img cartao1">
+                    <img src="../imgs/img-inicial/img/image 2 (4).png" alt="" class="alternativo1">
+                    <div class="description-card">
+                        <p class="description">100% gratuita e digital</p>
+                    </div>
+                    <p class="hide hideone">A escola Germinare é 100% gratuita, com acesso a uniforme, alimentação, notebook individual, uso de recursos digitais de alta qualidade, além de aulas de tecnologia com ênfase em linguagem de programação.</p> 
+                </div>
+        
+                <div class="container-cards">
+                    <img src="../imgs/img-inicial/img/image 2 (7).png" alt="" class="cardone-img">
+                    <img src="../imgs/img-inicial/img/image 2 (5).png" alt="" class="alternativo1">
+                    <div class="description-card">
+                        <p class="description cardfoco">foco em gestão</p>
+                    </div>
+                    <p class="hide hidetwo"> Durante os 7 anos na Escola Germinare, os alunos aprendem matérias base e de gestão, além de encararem desafios em aulas práticas, estágios e até cargos com carteira assinada. As aulas práticas são a etapa anterior ao estágio que se iniciam a partir do terceiro trimestre do 9º ano.  </p>
+                </div>
+        
+                <div class="container-cards cardone3">
+                    <img src="../imgs/img-inicial/img/image 2 (8).png" alt="" class="cardone-img">
+                    <img src="../imgs/img-inicial/img/image 2 (6).png" alt="" class="alternativo1">
+                    <div class="description-card description-card3">
+                        <p class="description">bem-estar e sáude</p>
+                    </div>
+                    <p class="hide hidethree">A escola conta com o apoio de profissionais especializados como nutricionistas, professores de condicionamento físico e psicólogas. Assim, a escola oferece alimentos frescos e sem conservantes, corantes ou aditivos químicos, aulas de condicionamento físico que atuam em conjunto com a alimentação para um estilo de vida mais saudável. Além disso, psicólogas no ambiente escolar oferecem orientações sobre como melhorar o desenvolvimento educacional. </p>
+                </div>
+            </div>
+            <div class="containeroutros">
+        
+                <div class="faculdade">
+                    <img src="../imgs/img-inicial/img/infraestrutura-escola-germinare05 2.png" alt="" class="facul-img">
+                        <div class="titlefacul">
+                            <h2 class="titleone teste1">Faculdade</h2>
+                            <h2 class="titletwo">Germinare</h2>
+                        </div>
+                        <div class="containertextfacul">
+                        <p class="facultext">A Faculdade Germinare é uma novidade do instituto, que terá início já em 2021. Será uma faculdade inovadora, de ensino à distância, com uma proposta de formação focada na prática, alinhada aos negócios parceiros. O projeto abrange um curso de gestão comercial, que será dividido por itinerário formativo por áreas de conhecimento.
+        
+                            Mais informações em breve!</p>
+                        <button class="faculbtn">saiba mais!</button>
+                    </div>
+                </div>
+                <div class="mainplus">
+                    <div class="other other1">
+                        <div class="logocontainer">
+                            <!--<img src="../imgs/img-inicial/img/Frente-4 3.png" alt="" class="congressoimg congresso1">
+                            <img src="../imgs/img-inicial/img/Frente-4 3.svg" alt="" class="imgdesktop">-->
+                            <img src="../imgs/img-inicial/img/MicrosoftTeams-image (6).png" alt="" class="congressologo congressologo1">
+                        </div>
+                        <!--<div class="plusdiv plusdiv1"> 
+                            <a href=""><img src="../imgs/img-inicial/img/addbtn.png" alt="" class="btnplus"></a>
+                            <h1 class="titlepcontainer">Congresso de Marcas</h1>
+                        </div>-->
+                        <div class="divplus">
+                            <!--img src="../imgs/img-inicial/img/Frente-4 3.png" alt="" class="logo-congresso">-->
+                            <!--<div class="btnpluscontainer">•</div>
+                            <div class="btn2-container">+</div>-->
+                            <div class="btn1plus"><p id="iconplus">+</p></div>
+        
+                            <h1 class="titlecontainer">Congresso de Marcas</h1>
+                        </div>
+                    </div>
+                    <div class="other other2">
+                        <div class="logocontainer2">
+                            <!--<img src="../imgs/img-inicial/img/Frente-4 4.png" alt="" class="congressoimg congresso2">-->
+                            <img src="../imgs/img-inicial/img/Brasão_Germinare_Branco-1.png" alt="" class="congressologo germinarelogo">
+                        </div>
+                        <!--
+                        <div class="plusdiv plusdvi2">
+                        <a href=""><img src="../imgs/img-inicial/img/addbtn.png" alt="" class="btnplus"></a>
+                        <h1 class="titlepcontainer programa">Programa de Supervisores</h1>
+                        </div>
+                        -->
+                        <div class="divplus divplus2">
+                            <!--<div class="btnpluscontainer">•</div>
+                            <div class="btn2-container">+</div>-->
+                            <div class="btn1plus btn2plus"><p id="iconplus">+</p></div>
+                            <h1 class="titlecontainer">Programa de Supervisores</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lgpd">
+                <img class="lgpdimg" src="../imgs/img-inicial/img/image 43 (1).png" alt="">
+                <img class="lgpdimg2" src="../imgs/img-inicial/img/image 43 (3).png" alt="">
+                <div class="tituloslgpd">
+                    <h2 class="titleonelgpd"> Privacidade e proteção </h2>
+                    <h2 class="titletwolgpd"> de dados</h2>
+                    <div class="textlegpd">
+                        <p>Coletamos seus dados para que possamos prestar a  você os nossos serviços de forma mais adequada e eficiente. Assim, para que possamos ter a confiança como base na prestação de nossos serviços, tratamos quaisquer dados ou informações coletadas sobre você como confidencial e apenas as utilizaremos para os fins descritos nessa Política de Privacidade e/ou autorizado por você.</p>
+                    </div>
+                    <a href="page-lgpd.html"><div class="ctalgpd">+ Clique aqui para mais informações</div></a>
+                </div>
+            </div>
+            <div class="certificados">
+                <h2 class="ttlcertificados"> Nossos Certificados </h2>
+                <img class="quadradobranco" src="../imgs/img-inicial/img/Line 8.svg" alt="">
+                <div class="imgcontainer">
+                    <div><img class="imgcertificado cebas"src="../imgs/img-inicial/img/MicrosoftTeams-image (7).png" alt=""></div>
+                    <div><img class="imgcertificado cmdca" src="../imgs/img-inicial/img/MicrosoftTeams-image (9).png" alt=""></div>
+                    <div><img class="imgcertificado unesco"src="../imgs/img-inicial/img/MicrosoftTeams-image (8).png" alt=""></div>
+                </div>
+                <div class="containercertificados">
+                    <div class="certificado certificadoum"> Em 2018, a Germinare conquistou a CEBAS pela contribuição da escola para o processo de inclusão social no país por meio de ofertas de bolsas de estudo.</div>
+                    <div class="certificado certificadodois">A Escola Germinare faz parte do Conselho Municipal dos Direitos da Criança e do Adolescente (CMDCA) desde 2014.</div>
+                    <div class="certificado certificadotres">Em 21 de outubro de 2010, a Germinare passou a integrar o Programa das Escolas Associadas da UNESCO no Brasil. </div>
+                </div>
+            </div>
+            
+            <script src='https://code.jquery.com/jquery-1.11.0.min.js'></script>
+            <script src='https://code.jquery.com/jquery-migrate-1.2.1.min.js'></script>
+            <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js'></script>
+    </main>
+
+    <footer id="footer">
+        <div id ="social">
+            <a href="https://www.instagram.com/escolagerminare/"><img src="../imgs/img-contato/assets/img/Instagram.png" alt="logo do instagram" class ="logo"></a>
+            <a href="https://www.youtube.com/channel/UCtfT0wIFhW2jyCMR0ZtBuzg"><img src="../imgs/img-contato/assets/img/YouTube.png" alt="logo do youtube" class ="logo"></a>
+            <a href="https://www.linkedin.com/company/instituto-germinare?trk=top_nav_home"><img src="../imgs/img-contato/assets/img/Linkedin.png" alt="logo do linkedin" class ="logo"></a>
+            <a href="https://www.facebook.com/germinareoficial"><img src="../imgs/img-contato/assets/img/Facebook.png" alt="logo do facebook" class ="logo"></a>
+        </div>
+        <div id ="contact">
+            <p>R. Irineu José Bordon - Vila Jaguara, São Paulo - SP, 05120-060</p>
+            <p>Telefone: (11) 3623-6000 </p>
+            <p>Escola Germinare – Escola de Negócios © 2021</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</html>

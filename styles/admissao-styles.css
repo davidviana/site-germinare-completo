@@ -1,0 +1,560 @@
+body{ 
+    font-family: "Montserrat";
+    background-color: #1f1f1f;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    width: 100%;
+}
+
+.banner {
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../imgs/img-admissao/banner/background.jpeg);
+    background-size: cover;
+    background-position: top center;
+}
+
+h1 {
+    font-size: 25px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+.banner-text {
+    padding: 15% 10%;
+}
+
+.banner-text > a >button {
+    margin-top: 5%;
+}
+
+button {
+    background-color: transparent;
+    color: white;
+    padding: 3%;
+    border: 2px solid white;
+    border-radius: 7px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+}
+
+.etapas {
+    margin-top: 100px;
+}
+
+#main p {
+    font-size: 15px;
+    line-height: 125%;
+}
+
+.alerta-1 {
+    margin: 20px 10px;
+}
+
+.alerta-2 {
+    background-color: #2E3092;
+    padding: 20px;
+}
+
+.etapas {
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../imgs/img-admissao/etapas/background.jpeg);
+    background-size: cover;
+    background-position: center center;
+    padding-top: 40px;
+}
+
+.etapas-texto {
+    padding: 10%;
+    width: 80%;
+}
+
+.etapas-texto > h2 {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.etapas-texto > p {
+    line-height: 150%;
+}
+
+.banner-text > div > h3 {
+    background-color: #2E3092;
+    color: white;
+    width: fit-content;
+    padding: 5px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+/*CAROUSEL*/
+.container-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    background: #2E3092;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.card-carousel {
+    display: block;
+    margin: auto;
+    line-height: 125%;
+    align-items: center;
+    text-align: left;
+    margin: 20px;
+    padding: 0 20px 0 20px;
+    font-size: 15px;
+    height: 170px;
+}
+
+.maincontainer {
+    position: initial;
+    margin-top: 200px;
+}
+
+.slider {
+    margin-bottom: 300px;
+}
+
+.bold {
+    font-weight: bolder;
+}
+
+.flex-container h1{
+    margin: 0;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.flex-container p {
+    margin: 0;
+}
+
+.flex-container{
+    max-width: 97vw;
+    font-size: 2vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    color: white;
+}
+
+.flex-item{
+    transition: ease-in-out;
+    display: flex;
+    padding: 10px 14px;
+    flex-direction: column;
+    height: max-content;
+    border-radius: 13px;
+    max-width: 400px;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+#testes-item {
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("../imgs/img-admissao/etapas-detalhes/teste.jpg");
+    background-position:center;
+    background-size: cover;
+}
+
+#inscricao-item{
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("../imgs/img-admissao/etapas-detalhes/inscrição.jpg");
+    background-size: cover;
+    background-position:center;
+}
+
+#entrevistas-item{
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("../imgs/img-admissao/etapas-detalhes/entrevista.jpeg");
+    background-size: cover;
+    background-position:center;
+}
+
+
+#matricula-item{
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("../imgs/img-admissao/etapas-detalhes/matricula.jpg");
+    background-size: cover;
+    background-position:center;
+}
+
+
+.saibamais{
+    padding-top: 6px;
+    background-color: transparent;
+    border: 0px;
+    border-top: white solid 2px;
+    border-radius: 2px;
+    display: flex;
+    align-items: flex-end;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.maistestes{
+    display: none;
+    padding: 3px;
+    line-height: 125%;
+}
+
+.textosdiv{
+    margin-bottom: 20px;
+    max-height: 10vh;
+    transition: ease-in-out 0.7s;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 5;
+    overflow: hidden;
+}
+
+
+.aparece {
+    max-height: 400px;
+    padding-bottom: 20px;
+}
+
+.title-admissao {
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.flex-item > h1{
+    padding-bottom: 10px;
+}
+
+#main {
+    margin-bottom: 50px;
+}
+
+#container-etapas {
+    display: block;
+}
+
+#container-etapas-desktop {
+    display: none;
+}
+
+/*TABLET*/
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+    #container-etapas {
+        display: block;
+    }
+    
+    #container-etapas-desktop {
+        display: none;
+    }
+
+    .inicio h1 {
+        font-size: 40px;
+        width: 50%;
+    }
+    .inicio h2 {
+        font-size: 30px;
+    }
+    .inicio p {
+        font-size: 18px;
+    }
+    .inicio button {
+        font-size: 20px;
+        padding: 12px;
+    }
+    .matricula li {
+        margin-left: 20px;
+        font-size: 18px;
+    }
+
+    .alerta-1, .alerta-2 {
+        padding: 20px;
+    }
+
+    .avaliacao {
+        padding: 20px;
+    }
+    
+    .avaliacao-texto {
+        margin-top: 15px;
+    }
+    
+    .avaliacao-texto > h2, .inscricao > h2, .matricula > h2{
+        padding-bottom: 2%;
+    }
+
+    .inscricao, .matricula{
+        padding: 50px;
+    }
+
+    .avaliacao-texto {
+        padding: 20px;
+    }
+}
+
+/*DESKTOP*/
+@media only screen and (min-width: 1024px){
+    #main p {
+        font-size: 18px;
+        line-height: 125%;
+    }
+
+    .inicio {
+        display: grid;
+    }
+
+    .banner-text {
+        padding: 7% 5%;
+        width: 100%;
+    }
+    .inicio h1 {
+        font-size: 60px;
+        width: 50%;
+    }
+    .inicio h2 {
+        font-size: 45px;
+    }
+    .inicio p {
+        font-size: 25px;
+        width: 50%;
+    }
+
+    .orange {
+        background: #EF6421;
+    }
+
+    .inicio button {
+        font-size: 20px;
+        padding: 12px;
+    }
+    .banner-text > a > button {
+        margin-top: 2%;
+    }
+    .matricula li {
+        font-size: 25px;
+    }
+
+    .etapas-texto > p {
+        font-size: 35px;
+        width: 60%;
+    }
+    .etapas-texto > h2 {
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+
+    .alerta-1, .alerta-2 {
+        padding: 20px;
+    }
+    .alertas{
+        display: flex;
+    }
+    .alerta-2 {
+        z-index: 10;
+        width: 40%;
+        height: min-content;
+        position: relative;
+        margin-top: -8%;
+        padding: 25px;
+        margin-right: 40px;
+    }
+    .alerta-1 {
+        width: 55%;
+    }
+
+    .banner-text > div > h3 {
+        background-color: #2E3092;
+        color: white;
+        width: fit-content;
+        padding: 8px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        font-size: 25px;
+    }
+
+    .flex-container {
+        display: none;
+    }
+
+    .container-carousel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .carousel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+
+    .card-carousel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+        padding: 20px;
+        height: 170px;
+    }
+
+    .card-carousel > p {
+        display: block;
+        margin: auto;
+    }
+
+    button {
+        transition: all 0.4s ease-in-out;
+    }
+
+    button:hover {
+        background-color: white;
+        color: #1f1f1f;
+    }
+
+    #container-etapas {
+        display: none;
+    }
+    
+    #container-etapas-desktop {
+        display: grid;
+    }
+
+    /* POPUP */
+    .modal {
+        display: none;
+        position: fixed; 
+        z-index: 10; 
+        padding-top: 10%;
+        left: 0;
+        top: 0;
+        width: 100%; 
+        height: 100%; 
+        overflow: auto;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0,0.5);
+    }
+    
+    .orientações {
+        padding-top: 5%;
+    }
+
+    .modal-content {
+        background-color: #fefefe;
+        color: #000;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+    }
+    
+    .modal-content p {
+        color: #000;
+    }
+
+    li {
+        margin: 10px;
+        line-height: 125%;
+        list-style: circle;
+        font-size: 18px;
+    }
+    
+    .close {
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        transition: all 0.4s ease-in-out;
+    }
+    
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    .container-modal {
+        grid-template-columns: repeat(2, 50%) ;
+        grid-template-rows: repeat(2, 400px);
+        justify-content: center;
+    }
+    
+    .card-modal {
+        margin: 20px;
+        padding: 10px;
+    }
+    
+    .card-modal > h1 {
+        margin-top: 20px;
+        font-size: 25px;
+        text-transform: capitalize;
+        text-align: center;
+        color: #fff;
+        font-weight: 800;
+    }
+
+    .card-modal > p {
+        font-size: 18px;
+        text-align: left;
+        color: #fff;
+        margin: 50px 5% 0;
+    }
+
+    .btn-saiba-mais {
+        display: block;
+        padding: 0;
+        margin: auto;
+        width: 200px;
+        height: 50px;
+        border: 3px solid white;
+        border-radius: 7px;
+        background: transparent;
+        font-size: 18px;
+        color: #fff;
+        text-transform: uppercase;
+        position: relative;
+        top: 100px;
+    }
+
+    #card-um {
+        background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("../imgs/img-admissao/etapas-detalhes/teste.jpg");
+        background-position:center center;
+        background-size: cover;
+        border: 2px solid white;
+        border-radius: 7px;
+    }
+
+    #card-dois {
+        background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("../imgs/img-admissao/etapas-detalhes/inscrição.jpg");
+        background-size: cover;
+        background-position:center center;
+        border: 2px solid white;
+        border-radius: 7px;
+    }
+
+    #card-tres {
+        background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("../imgs/img-admissao/etapas-detalhes/entrevista.jpeg");
+        background-size: cover;
+        background-position:center center;
+        border: 2px solid white;
+        border-radius: 7px;
+    }
+
+    #card-quatro{
+        background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("../imgs/img-admissao/etapas-detalhes/matricula.jpg");
+        background-size: cover;
+        background-position:center center;
+        border: 2px solid white;
+        border-radius: 7px;
+    }
+}

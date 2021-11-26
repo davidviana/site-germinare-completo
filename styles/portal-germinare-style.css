@@ -1,0 +1,131 @@
+#body {
+    overflow: hidden;
+    background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url(../imgs/img-portal-germinare/assets/portal-aluno-img/main-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#main {
+    display: block;
+    margin-top: 150px;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-top: 30px;
+}
+
+.input{
+    background: transparent;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 22px;
+    width: 220px;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    padding: 5px;
+    padding-left: 10px;
+}
+
+input::placeholder {
+    font-weight: 500;
+    color: #fff;
+}
+
+#logo {
+    display: block;
+    margin: auto;
+    width: auto;
+    height: 75px;
+}
+
+.input:focus {
+    outline: 0;
+}
+
+#user {
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+
+#btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 90px;
+    margin-top: 30px;
+    background: #E5E5E5;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 22px;
+    width: 200px;
+    height: 45px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#icon {
+    width: 20px;
+    height: 22px;
+    margin-left: -40px;
+}
+
+#icon-eye {
+    margin-left: -50px;
+}
+
+/*classes para validação*/
+.correct {
+    border:3px solid green;
+}
+
+.incorrect {
+    border:3px solid rgb(233, 45, 45);
+}
+
+.msg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(233, 45, 45);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    position: relative;
+    margin: 10px;
+}
+/*classes para validação*/
+
+
+@media only screen and (min-width:1024px) {
+    #body{
+        background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../imgs/img-portal-germinare/assets/portal-aluno-img/main-desk.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .input{
+        font-size: 30px;
+        width: 400px;
+        border-radius: 15px;
+    }
+
+    #btn {
+        font-size: 25px;
+        width: 300px;
+        height: 45px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+
+    #btn:hover {
+        background: #8a8a8a;
+    }
+}

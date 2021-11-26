@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/header-style.css">
+    <link rel="stylesheet" href="../styles/footer-style.css">
+    <link rel="stylesheet" href="../styles/tech-style.css">
+    <link rel="shortcut icon" href="../imgs/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="../scripts/main-header.js"></script>
+    <title>Germinare Tech</title>
+</head>
+<body>
+    <header>
+        <header id ="header">
+            <div class="mobile-container">
+            <div class="topnav">
+                <a href="page-inicial.html" class="active"><img id="logo" src="../imgs/img-contato/assets/logo.png"
+                        alt="logo da germinare em tema branco"></a>
+                <div id="myLinks">
+                    <a class="text" href="javascript:void(0)" onclick="abrirCardsFi(this)">admissão</a>
+                    <div id ="card-first">
+                        <a class = "hidden-menu" href="page-admissao.html#resultado">resultado</a>
+                        <a class = "hidden-menu" href="page-admissao.html#etapas">etapas</a>
+                        <a class = "hidden-menu" href="page-tech.html">germinare tech</a>
+                    </div>
+
+                    <a class="text" href="javascript:void(0)" onclick="abrirCardsSe(this)">acadêmico</a>
+                    <div id ="card-second">
+                        <a class = "hidden-menu" href="page-academico.html#formação-tech">formação técnica</a>
+                        <a class = "hidden-menu" href="page-academico.html#grade-de-disciplinas">grade de disciplina</a>
+                        <a class = "hidden-menu" href="page-academico.html#academias-germinare">academias</a>
+                        <a class = "hidden-menu" href="page-academico.html#projetos-germinare">projetos germinare</a>
+                    </div>
+
+                    <a class="text" href="javascript:void(0)" onclick="abrirCardsTh(this)">parcerias</a>
+                    <div id ="card-third">
+                        <a class = "hidden-menu" href="page-parceiros.html#jftituloprincipal">parceiros</a>
+                        <a class = "hidden-menu" href="page-parceiros.html#aulas-práticas">aulas práticas</a>
+                        <a class = "hidden-menu" href="page-parceiros.html#estágios">estágios</a>
+                        <a class = "hidden-menu" href="page-parceiros.html#titulogaleria">galeria</a>
+                    </div>
+    
+                    <a class="text" href="javascript:void(0)" onclick="abrirCardsFo(this)">sobre nós</a>
+                    <div id ="card-fourth">
+                        <a class="hidden-menu" href="page-sobre-nos.html#nossa-história">nossas história</a>
+                        <a class="hidden-menu" href="page-sobre-nos.html#nossas-crencas">nossa crenças</a>
+                        <a class="hidden-menu" href="page-sobre-nos.html#nossos-resultados">nossos resultados</a>
+                    </div>
+    
+                    <a class="text" href="javascript:void(0)" onclick="abrirCardsFiv(this)">contato</a>
+                    <div id ="card-five">
+                        <a class = "hidden-menu" href="page-contato.html#fale-conosco">fale conosco</a>
+                        <a class = "hidden-menu" href="page-contato.html#doacoes-info">doações</a>
+                    </div>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="abrirCards(this)" id="icon-header">
+                    <i  class="fa fa-bars"></i>
+                </a>
+                </div>
+            </div>
+        </header>
+    
+        <header id ="nav-container">
+            <div class="desktop-container">
+            <div class="topnav">
+                <div id="myLink">
+                    <a href="page-inicial.html" class="active"><img id="logo" src="../imgs/img-contato/assets/logo.png" alt="logo da germinare em tema branco"></a>
+                    <div class = "coluna">
+                        <a class="text" href="page-admissao.html" >admissão</a>
+                        <div class="barra orange">
+                            <div class ="card">
+                                <a class = "hidden-menu border" href="page-admissao.html#resultado">resultado</a>
+                                <a class = "hidden-menu border" href="page-admissao.html#etapas">etapas</a>
+                                <a class="hidden-menu" href="page-tech.html">germinare tech</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="coluna">
+                        <a class="text" href="page-academico.html" >acadêmico</a>
+                        <div class="barra">
+                            <div class ="card">
+                                <a class = "hidden-menu border" href="page-academico.html#formação-tech">formação técnica</a>
+                                <a class = "hidden-menu border" href="page-academico.html#grade-de-disciplinas">grade de disciplina</a>
+                                <a class = "hidden-menu border" href="page-academico.html#academias-germinare">academias</a>
+                                <a class = "hidden-menu" href="page-academico.html#projetos-germinare">projetos germinare</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="coluna">
+                        <a class="text" href="page-parceiros.html">parcerias</a>
+                        <div class="barra">
+                            <div class ="card">
+                                <a class = "hidden-menu border" href="page-parceiros.html#jftituloprincipal">parceiros</a>
+                                <a class = "hidden-menu border" href="page-parceiros.html#aulas-práticas">aulas práticas</a>
+                                <a class = "hidden-menu border" href="page-parceiros.html#estágios">estágios</a>
+                                <a class = "hidden-menu" href="page-parceiros.html#titulogaleria">galeria</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="coluna">
+                        <a class="text" href="page-sobre-nos.html">sobre nós</a>
+                        <div class="barra">
+                            <div class ="card">
+                                <a class="hidden-menu border" href="page-sobre-nos.html#nossa-história">nossas história</a>
+                                <a class="hidden-menu border" href="page-sobre-nos.html#nossas-crencas">nossa crenças</a>
+                                <a class="hidden-menu" href="page-sobre-nos.html#nossos-resultados">nossos resultados</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="coluna">
+                        <a class="text" href="page-contato.html">contato</a>
+                        <div class="barra">
+                            <div class ="card">
+                                <a class = "hidden-menu border" href="page-contato.html#fale-conosco">fale conosco</a>
+                                <a class = "hidden-menu" href="page-contato.html#doacoes-info">doações</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </header>
+
+    <main id="main">
+        <div class="banner-tech">
+            <div class="banner-text">
+                <h1>Germinare Tech</h1>
+                <p>A Germinare forma jovens profissionais altamente capacitados e preparados para os desafios do mercado de tecnologia da informação.</p>
+                <a href="https://seufuturocomecaaqui.com.br/tec" target="blank_"><button>Inscreva-se já!</button></a>    
+            </div>
+        </div>
+        <div class="introducao">
+            <div class="introducao-content">
+                <h3>Ensino Médio Técnico em Desenvolvimento de Sistemas</h3>
+                <p>Inscrições abertas do dia 16 a 30 de novembro de 2021, somente para alunos devidamente matriculados no 9° ano do Ensino Fundamental II, para iniciar a 1° série do Ensino Médio conosco em 2022.</p>
+                <p>Considerando a expansão da tecnologia e a significativa inserção da TI nas empresas brasileiras, criamos um projeto com o objetivo de formar profissionais capacitados na área, a fim de que possam, efetivamente, colocar em prática o processo transformacional da tecnologia.</p>
+                <p>O Ensino Médio de Tecnologia conta com uma carga-horária total de 3.640 horas, sendo 1.840 destinadas às disciplinas de base científica e tecnológica e o restante, às disciplinas de base comum do Ensino Médio, além dos estágios remunerados em empresas referência em tecnologia.</p>
+                <p>
+                Para mais informações, acesse o <a href="http://www.escolagerminare.org.br/wp-content/uploads/2021/11/Manual-do-candidato-Ensino-Medio-Tech.pdf" target="blank_">Manual do candidato - Ensino Medio Tech</a>
+                </p>
+            </div>
+            <div class="introducao-video">
+                <embed src="../imgs/img-tech/img/germinare-tech.mp4" loop="false">
+            </div>
+        </div>
+        <div class="grid-data">
+            <div>
+                <div id="grid1">
+                    <img src="../imgs/img-tech/img/book-solid.svg" alt="book icon">
+                    <p>Aulas em período integral (tarde e noite) ministradas por professores altamente qualificados e com experiencia no mercado.</p>                    
+                </div>
+            </div>
+            <div>
+                <div id="grid2">
+                    <img src="../imgs/img-tech/img/award-solid.svg" alt="award icon">
+                    <p>Preparação completa de desenvolvedores com certificação Front-End, Back-End e Fullstack além do certificado de conclusão do Ensino Médio.</p>
+                </div>
+            </div>
+            <div>
+                <div id="grid3">
+                    <img src="../imgs/img-tech/img/users-solid.svg" alt="group-icon">
+                    <p>Desenvolvimento de habilidades específica como visão sistêmica, liderança inovação, criatividade, perseverança e trabalho em equipe.</p>    
+                </div>
+            </div>
+            <div>
+                <div id="grid4">
+                    <img src="../imgs/img-tech/img/chalkboard-teacher-solid.svg" alt="teacher-icon">
+                    <p>Educação aliada à qualidade de vida contando com apoio nutricional, pedagógico e psicológico</p>    
+                </div>
+            </div>
+            <div>
+                <div id="grid5">
+                    <img src="../imgs/img-tech/img/donate-solid.svg" alt="coin-icon">
+                    <p>100% gratuita, incluindo uniforme, alimentação e notebook individual.</p>    
+                </div>
+            </div>
+            <div>
+                <div id="grid6">
+                    <img src="../imgs/img-tech/img/laptop-solid.svg" alt="laptop-icon">
+                    <p>Uso de recursos digitais de alta qualidade, internet de alta velocidade na sala de aula e softwares de última geração.</p>
+                </div>
+            </div>
+        </div>
+        <div class="residencia">
+            <div class="residencia-h1">
+                <h1>Programa de Residência Técnica Germinare</h1>
+            </div>
+            <div class="residencia-text">
+                <p>A Escola Germinare oferece um ensino totalmente gratuito e integral, com professores altamente qualificados com dedicação exclusiva à escola. Os estudantes contam com quatro refeições por dia, além de frutas frescas disponibilizadas durante todo o período; wi-fi 6; fornecimento de notebook, uniforme e material didático; salas de aula climatizadas 100% digitais que simulam um startup, com equipamentos de última geração (mesas de reunião, isolamento acústico, carpete, cadeiras ergonômicas, câmeras, microfones, caixas de som, projetores e lousas eletrônicas). No total são + de 1800 horas de educação tecnológica específica equivalente a um MBA, e + de 4.200 horas de <span class="bold">experiência nas profissional prática nas empresas do grupo J&F.</span></p>
+                
+                <p>Ao longo do curso os alunos colocarão em prática seu aprendizado computacional em programas de residência remunerada oferecidos pelos centros de desenvolvimento em um dos maiores grupos empresariais do País, dentro de empresas de tecnologia e finanças, como <span class="bold">Picpay</span> e <span class="bold">Banco Original.</span></p>
+                
+                <p><span class="bold">Acompanhe-nos nas redes sociais para não perder as próximas atualizações!</span></p>
+            </div>
+        </div>
+    </main>
+
+    <footer id= "footer">
+        <div id ="social">
+            <a href="https://www.instagram.com/escolagerminare/"><img src="../imgs/img-contato/assets/img/Instagram.png" alt="logo do instagram" class ="logo"></a>
+            <a href="https://www.youtube.com/channel/UCtfT0wIFhW2jyCMR0ZtBuzg"><img src="../imgs/img-contato/assets/img/YouTube.png" alt="logo do youtube" class ="logo"></a>
+            <a href="https://www.linkedin.com/company/instituto-germinare?trk=top_nav_home"><img src="../imgs/img-contato/assets/img/Linkedin.png" alt="logo do linkedin" class ="logo"></a>
+            <a href="https://www.facebook.com/germinareoficial"><img src="../imgs/img-contato/assets/img/Facebook.png" alt="logo do facebook" class ="logo"></a>
+        </div>
+        <div id ="contact">
+            <p>R. Irineu José Bordon - Vila Jaguara, São Paulo - SP, 05120-060</p>
+            <p>Telefone: (11) 3623-6000 </p>
+            <p>Escola Germinare – Escola de Negócios © 2021</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
